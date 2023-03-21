@@ -1,4 +1,5 @@
 import JoinUs from 'components/JoinUs/JoinUs'
+import Stats from 'components/Stats/Stats'
 
 type Props = {}
 
@@ -7,6 +8,7 @@ const Main = (props: Props) => {
         <>
             <div className="container">
                 <JoinUs />
+                <Stats />
             </div>
         </>
     )

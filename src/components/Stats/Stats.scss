@@ -1,0 +1,48 @@
+.Stats {
+    h1 {
+        font-family: 'IBM Plex Sans';
+        font-weight: 700;
+        font-size: 80px;
+        line-height: 80px;
+        text-transform: capitalize;
+        color: #222222;
+        padding: 20px 0 25px 0;
+        margin: 0;
+    }
+
+    h3 {
+        font-family: 'IBM Plex Sans';
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 32px;
+        color: #222222;
+        margin: 0;
+    }
+    .Item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+        height: calc((100vw - 90px - 16px * 4) / 4);
+    }
+    .SportsActivities {
+        background-color: #fff4e5;
+    }
+    .RegisteredEnthusiasts {
+        background-color: #e7fde9;
+    }
+    .YearsOfExperience {
+        background-color: #f2f2fd;
+    }
+    .AverageRating {
+        background-color: #fdf1f5;
+    }
+    .Icon {
+        width: 45px;
+        height: 45px;
+        align-self: flex-end;
+        justify-self: flex-end;
+        margin: 25px 5px 0 0;
+    }
+}

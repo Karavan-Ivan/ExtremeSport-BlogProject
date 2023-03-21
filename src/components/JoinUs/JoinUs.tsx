@@ -10,7 +10,12 @@ type Props = {}
 
 const JoinUs = (props: Props) => {
     return (
-        <Grid container spacing={2} sx={{ marginTop: '50px' }}>
+        <Grid
+            container
+            spacing={2}
+            sx={{ marginTop: '50px' }}
+            className="JoinUs"
+        >
             <Grid item md={6} sx={{ padding: '0' }}>
                 <Item className="info">
                     <h6>Feel The Excitement</h6>
