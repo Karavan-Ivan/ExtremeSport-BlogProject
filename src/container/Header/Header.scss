@@ -1,0 +1,35 @@
+.app-bar {
+    display: flex;
+    align-items: start;
+    height: 455px;
+    background-image: url(./img/headerPicture.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding-top: 38px;
+    padding-bottom: 0;
+}
+
+.menu button {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 26px;
+    background: none;
+    margin: 0 15px;
+    width: 100px;
+}
+.menu button:hover {
+    color: #ff9600;
+}
+
+.whiteVector {
+    background-image: url(./img/whiteVector.svg);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: auto;
+    background-size: 100%;
+    height: 210px;
+    position: absolute;
+    top: 246px;
+    right: 0;
+}
