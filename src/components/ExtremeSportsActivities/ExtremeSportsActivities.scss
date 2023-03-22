@@ -1,0 +1,21 @@
+.ExtremeSportsActivities {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: #ffffff;
+
+    hr {
+        border-color: #ffffff;
+        margin-top: 40px;
+    }
+    h2 {
+        color: #ff9600;
+        margin-bottom: 20px;
+    }
+    h3 {
+        max-width: 500px;
+    }
+    div {
+        max-width: 300px;
+    }
+}

@@ -1,0 +1,27 @@
+.ExtremeSportsAtricle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    h1 {
+        font-family: 'Arizonia';
+        font-weight: 400;
+        font-size: 160px;
+        line-height: 288px;
+        text-transform: capitalize;
+        color: #ffffff;
+        margin: 0;
+        margin-bottom: 100px;
+    }
+    .OrangeVector {
+        position: absolute;
+        bottom: 0;
+        align-self: center;
+        height: 185px;
+        width: 100vw;
+        background-image: url(./img/OrangeVector.svg);
+        background-repeat: no-repeat;
+        background-size: 100vw;
+    }
+}

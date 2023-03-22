@@ -1,4 +1,5 @@
 import Slider from 'components/Slider/Slider'
+import './ExtremeSportsActivities.scss'
 
 type Props = {}
 
@@ -6,8 +7,11 @@ const ExtremeSportsActivities = (props: Props) => {
     return (
         <>
             <div className="ExtremeSportsActivities">
-                <h2>Live The Excitement</h2>
-                <h1>Extreme Sports Activities</h1>
+                <div>
+                    <h2>Live The Excitement</h2>
+                    <h1>Extreme Sports Activities</h1>
+                    <hr />
+                </div>
                 <h3>
                     Dolor sit amet consectetur adipiscing elit sed con eiusmod
                     tempor incididunt labore etys dolore magna aliqua. Quis

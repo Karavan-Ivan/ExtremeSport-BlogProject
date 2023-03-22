@@ -1,0 +1,30 @@
+.JoinClubInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 190px 0;
+    padding-bottom: 450px;
+    background-color: #ff9600;
+    background-image: url(./img/logo-white.png);
+    background-repeat: no-repeat;
+    background-position: 50% 10%;
+
+    h1 {
+        color: #ffffff;
+    }
+    h3 {
+        padding: 40px;
+        font-size: 30px;
+        line-height: 36px;
+        text-transform: capitalize;
+        color: #ffffff;
+    }
+    button {
+        border: none;
+        background-color: #0c3543;
+    }
+    button:hover {
+        background-color: #14b9f1;
+    }
+}
