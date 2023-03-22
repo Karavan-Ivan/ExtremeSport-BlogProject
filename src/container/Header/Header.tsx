@@ -9,7 +9,7 @@ type Props = {}
 const Header = (props: Props) => {
     return (
         <>
-            <Container className="app-bar container">
+            <Container className="app-bar">
                 <Logo />
                 <Menu />
                 <div className="whiteVector"></div>

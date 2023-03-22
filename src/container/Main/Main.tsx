@@ -1,3 +1,4 @@
+import ExtremeSportsActivities from 'components/ExtremeSportsActivities/ExtremeSportsActivities'
 import JoinUs from 'components/JoinUs/JoinUs'
 import Stats from 'components/Stats/Stats'
 
@@ -9,6 +10,7 @@ const Main = (props: Props) => {
             <div className="container">
                 <JoinUs />
                 <Stats />
+                <ExtremeSportsActivities />
             </div>
         </>
     )

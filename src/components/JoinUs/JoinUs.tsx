@@ -18,15 +18,15 @@ const JoinUs = (props: Props) => {
         >
             <Grid item md={6} sx={{ padding: '0' }}>
                 <Item className="info">
-                    <h6>Feel The Excitement</h6>
+                    <h2>Feel The Excitement</h2>
                     <h1>Join Us and Embark on New Adventures</h1>
                     <hr />
-                    <p>
+                    <h3>
                         Dolor sit amet consectetur adipiscing elits eiusmod
                         tempor incididunts laboreyse dolore mag aliqua. Quis
                         ipsum supendise ultrices gravid. Risus commodo viverra
                         sed ipsum maecenas.
-                    </p>
+                    </h3>
                     <ul>
                         <li>
                             <ExpandCircleDownTwoToneIcon className="UlIcons" />
