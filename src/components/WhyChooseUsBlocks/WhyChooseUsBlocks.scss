@@ -1,0 +1,62 @@
+.WhyChooseUsBlocks {
+    .WhyChooseUsBlock {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h2 {
+            padding-top: 45px;
+            padding-bottom: 20px;
+            font-family: 'IBM Plex Sans';
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 31px;
+            text-align: center;
+        }
+        h3 {
+            text-align: center;
+        }
+    }
+    .imageBlock {
+        border-radius: 65px;
+        width: 130px;
+        height: 130px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .Icon {
+        height: 60px;
+        width: 60px;
+    }
+
+    .AboutTeam {
+        background-color: #f2f2fd;
+        .Icon {
+            color: #0055ff;
+        }
+    }
+    .AboutTrain {
+        background-color: #e7fde9;
+        .Icon {
+            color: #00b33c;
+        }
+    }
+    .AboutSkills {
+        background-color: #fff4e5;
+        .Icon {
+            color: #ff9600;
+        }
+    }
+    .AboutGlobe {
+        background-color: #fdf1f5;
+        .Icon {
+            color: #ff4d79;
+        }
+    }
+    .imageBlock:hover {
+        background-color: #0c3543;
+        .Icon {
+            color: #ffffff;
+        }
+    }
+}

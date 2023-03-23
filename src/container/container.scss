@@ -1,18 +1,14 @@
-.margin {
+.mainContainer {
+    display: flex;
+    flex-direction: column;
+    padding-left: 45px;
+    padding-right: 45px;
     margin-bottom: 100px;
 }
 .firstContainer {
-    display: flex;
-    flex-direction: column;
-    padding-left: 45px;
-    padding-right: 45px;
     gap: 100px;
 }
 .middleContainer {
-    display: flex;
-    flex-direction: column;
-    padding-left: 45px;
-    padding-right: 45px;
     gap: 30px;
     background-color: #0c3543;
     padding-bottom: 0;
@@ -20,10 +16,6 @@
 }
 
 .JoinClubInfoContainer {
-    display: flex;
-    flex-direction: column;
-    padding-left: 45px;
-    padding-right: 45px;
     gap: 30px;
     background-color: #ff9600;
 }

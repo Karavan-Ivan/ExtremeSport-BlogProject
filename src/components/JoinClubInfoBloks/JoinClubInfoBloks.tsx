@@ -6,7 +6,7 @@ type Props = {}
 
 const JoinClubInfoBloks = (props: Props) => {
     return (
-        <Grid container spacing={4}>
+        <Grid container spacing={4} className="JoinClubInfoBloks">
             <Grid item md={4} className="GridBlock">
                 <Item className="block SportsVideos">
                     <h1>Sports videos</h1>
