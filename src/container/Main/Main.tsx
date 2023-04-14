@@ -4,6 +4,7 @@ import ExtremeSportsActivities from 'components/ExtremeSportsActivities/ExtremeS
 import JoinClubInfo from 'components/JoinClubInfo/JoinClubInfo'
 import JoinClubLogo from 'components/JoinClubLogo/JoinClubLogo'
 import JoinUs from 'components/JoinUs/JoinUs'
+import LatestNews from 'components/LatestNews/LatestNews'
 import Stats from 'components/Stats/Stats'
 import WhyChooseUs from 'components/WhyChooseUs/WhyChooseUs'
 
@@ -25,6 +26,7 @@ const Main = (props: Props) => {
             </div>
             <div className="mainContainer">
                 <WhyChooseUs />
+                <LatestNews />
             </div>
         </>
     )
