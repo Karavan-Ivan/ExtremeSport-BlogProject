@@ -1,5 +1,5 @@
 import Typography from '@mui/material/Typography'
-import logo from 'assets/logo.svg'
+import logo from 'assets/logo.png'
 
 type Props = {}
 
