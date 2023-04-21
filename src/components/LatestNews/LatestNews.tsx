@@ -1,5 +1,4 @@
 import Grid from '@mui/material/Grid'
-import Item from '@mui/material/Grid'
 import LatestNewsArticle from 'components/LatestNewsArticle/LatestNewsArticle'
 import LatestNewsSlider from 'components/LatestNewsSlider/LatestNewsSlider'
 

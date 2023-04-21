@@ -6,6 +6,8 @@ import { StyledEngineProvider } from '@mui/material/styles'
 import 'components/Fonts/Fonts.scss'
 import 'components/Button/Button.scss'
 import 'components/UlIcons/UlIcons.scss'
+import { Route, Routes } from 'react-router-dom'
+import AboutUs from 'pages/AboutUs/AboutUs'
 
 type Props = {}
 
@@ -14,7 +16,11 @@ const App = (props: Props) => {
         <StyledEngineProvider injectFirst>
             <CssBaseline />
             <Header />
-            <Main />
+            <Routes>
+                <Route path='/Main' element={<Main />}/>
+                <Route path='/AboutUs' element={<AboutUs/>}/>
+            </Routes>
+            
             <Footer />
         </StyledEngineProvider>
     )

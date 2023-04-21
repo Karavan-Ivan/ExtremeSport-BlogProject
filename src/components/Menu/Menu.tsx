@@ -1,10 +1,16 @@
+import { NavLink } from "react-router-dom"
+
 type Props = {}
 
 const Menu = (props: Props) => {
     return (
         <div className="menu">
-            <button>Home</button>
-            <button>About us</button>
+            <button>
+                <NavLink to="/Main">Home</NavLink>
+                </button>
+            <button>
+                <NavLink to="/AboutUs">About us</NavLink>
+            </button>
             <button>Activities</button>
             <button>Latest News</button>
             <button>Contacts</button>

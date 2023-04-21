@@ -1,5 +1,3 @@
-import Grid from '@mui/material/Grid'
-import Item from '@mui/material/Grid'
 import ExtremeSportsActivities from 'components/ExtremeSportsActivities/ExtremeSportsActivities'
 import JoinClubInfo from 'components/JoinClubInfo/JoinClubInfo'
 import JoinClubLogo from 'components/JoinClubLogo/JoinClubLogo'
