@@ -8,27 +8,72 @@
     padding: 38px 45px 0 45px;
 }
 
-.menu button {
-    color: #ffffff;
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 26px;
-    background: none;
-    margin: 0 15px;
-    width: 100px;
-}
-.menu button:hover {
-    color: #ff9600;
-}
+.menu {
+    button {
+        color: #ffffff;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 26px;
+        background: none;
+        margin: 0 15px;
+        width: 100px;
+    }
+    button:hover {
+        color: #ff9600;
+    }
+    .MenuButton {
+        color: #ffffff;
+        text-decoration: none;
+    }
+    .activeMenuButton {
+        color: #ff9600;
+        text-decoration: none;
+    }
 
-.whiteVector {
-    background-image: url(./img/whiteVector.svg);
-    background-repeat: no-repeat;
-    width: 100%;
-    height: auto;
-    background-size: 100%;
-    height: 210px;
-    position: absolute;
-    top: 246px;
-    right: 0;
+    .whiteVector {
+        background-image: url(./img/whiteVector.svg);
+        background-repeat: no-repeat;
+        width: 100%;
+        height: auto;
+        background-size: 100%;
+        height: 210px;
+        position: absolute;
+        top: 246px;
+        right: 0;
+    }
+    .dropDownBtn {
+        position: relative;
+    }
+    .dropDownContent {
+        position: absolute;
+        display: none;
+        padding: 0;
+        margin: 3px 0 0;
+        left: 50px;
+        width: auto;
+        z-index: 1;
+
+        li {
+            color: #ffffff;
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 26px;
+            text-decoration: none;
+            list-style: none;
+            background-color: #0c3543;
+            padding: 1px 6px;
+            border-width: 2px;
+            border-style: outset;
+            border-color: buttonborder;
+            border-image: initial;
+            width: 130px;
+            text-align: left;
+        }
+    }
+    .dropDownBtn:hover .dropDownContent {
+        display: block;
+    }
+    .dropDownContent li:hover {
+        color: #ff9600;
+    }
 }
