@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom"
+import { NavLink } from 'react-router-dom'
 
 type Props = {}
 
@@ -7,11 +7,13 @@ const Menu = (props: Props) => {
         <div className="menu">
             <button>
                 <NavLink to="/Main">Home</NavLink>
-                </button>
+            </button>
             <button>
                 <NavLink to="/AboutUs">About us</NavLink>
             </button>
-            <button>Activities</button>
+            <button>
+                <NavLink to="/Activities">Activities</NavLink>
+            </button>
             <button>Latest News</button>
             <button>Contacts</button>
         </div>
