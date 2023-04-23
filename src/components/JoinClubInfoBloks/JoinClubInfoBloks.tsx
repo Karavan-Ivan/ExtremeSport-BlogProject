@@ -1,4 +1,4 @@
-import Grid from '@mui/material/Grid'
+import { Grid } from '@mui/material'
 import Item from '@mui/material/Grid'
 import './JoinClubInfoBloks.scss'
 
@@ -6,25 +6,25 @@ type Props = {}
 
 const JoinClubInfoBloks = (props: Props) => {
     return (
-        <Grid container spacing={4} className="JoinClubInfoBloks">
-            <Grid item md={4} lg={4} xl={4} className="GridBlock">
-                <Item className="block SportsVideos">
+        <Grid container spacing={10} className="JoinClubInfoBloks">
+            <Grid item md={4} lg={4} xl={4} className="gridBlock">
+                <Item className="block sportsVideos">
                     <h1>Sports videos</h1>
                     <h2>Get inspired</h2>
                     <hr />
                     <h3>Watch</h3>
                 </Item>
             </Grid>
-            <Grid item md={4} lg={4} xl={4} className="GridBlock">
-                <Item className="block ClubActivities">
+            <Grid item md={4} lg={4} xl={4} className="gridBlock">
+                <Item className="block clubActivities">
                     <h1>Club activities</h1>
                     <h2>View all sports</h2>
                     <hr />
                     <h3>Look</h3>
                 </Item>
             </Grid>
-            <Grid item md={4} lg={4} xl={4} className="GridBlock">
-                <Item className="block Instructors">
+            <Grid item md={4} lg={4} xl={4} className="gridBlock">
+                <Item className="block team">
                     <h1>Meet our team</h1>
                     <h2>The instructors</h2>
                     <hr />
