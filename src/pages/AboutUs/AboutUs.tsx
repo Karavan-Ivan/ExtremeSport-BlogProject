@@ -1,4 +1,3 @@
-import React from 'react'
 import RiskAndRewards from './AboutUsComponents/RiskAndRewards/RiskAndRewards'
 import ReasonsToChoose from './AboutUsComponents/ReasonsToChoose/ReasonsToChoose'
 import Instructors from './AboutUsComponents/Instructors/Instructors'

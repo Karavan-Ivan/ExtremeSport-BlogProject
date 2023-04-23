@@ -1,6 +1,6 @@
-import React from 'react'
 import RiskAndRewardsInfo from './RiskAndRewardsInfo'
 import './RiskAndRewards.scss'
+
 type Props = {}
 
 const RiskAndRewards = (props: Props) => {
