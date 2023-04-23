@@ -58,7 +58,11 @@ const Menu = (props: Props) => {
             </button>
 
             <button>Latest News</button>
-            <button>Contacts</button>
+            <button>
+                <NavLink to="/Contact" className={setActive}>
+                    Contact
+                </NavLink>
+            </button>
         </div>
     )
 }

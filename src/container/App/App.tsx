@@ -15,6 +15,7 @@ import SurfingPage from 'pages/Activities/ActivitiesPages/SurfingPage'
 import SkateboardingPage from 'pages/Activities/ActivitiesPages/SkateboardingPage'
 import JetSkiingPage from 'pages/Activities/ActivitiesPages/JetSkiingPage'
 import IceClimbingPage from 'pages/Activities/ActivitiesPages/IceClimbingPage'
+import Contact from 'pages/Contact/Contact'
 
 type Props = {}
 
@@ -45,6 +46,7 @@ const App = (props: Props) => {
                     path="/Ice Climbing"
                     element={<IceClimbingPage />}
                 ></Route>
+                <Route path="/Contact" element={<Contact />}></Route>
             </Routes>
 
             <Footer />
