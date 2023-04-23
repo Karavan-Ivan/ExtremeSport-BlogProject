@@ -2,6 +2,7 @@ import { Grid } from '@mui/material'
 import Item from '@mui/material/Grid'
 import Bundoran from '../ActivitiesComponents/img/Bundoran.png'
 import Teahupoo from '../ActivitiesComponents/img/Teahupoo.png'
+import FavoriteIcon from '@mui/icons-material/Favorite'
 
 type Props = {}
 
@@ -30,6 +31,7 @@ const Surfing = (props: Props) => {
                                 European Surfing Championships three times.
                             </span>
                         </h3>
+                        <FavoriteIcon className="buttonLike" />
                     </Item>
                 </Grid>
                 <Grid item md={4} lg={4} xl={4}>
@@ -50,6 +52,7 @@ const Surfing = (props: Props) => {
                                 for the most part, it is undeveloped.
                             </span>
                         </h3>
+                        <FavoriteIcon className="buttonLike" />
                     </Item>
                 </Grid>
             </Grid>

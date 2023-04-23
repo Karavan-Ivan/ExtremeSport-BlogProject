@@ -1,0 +1,103 @@
+.activitiesPages {
+    margin-top: 70px;
+    .Blocks {
+        margin-top: 50px;
+        .Block {
+            background-color: #f7f7f7;
+            border-radius: 10px;
+            position: relative;
+            img {
+                width: 100%;
+                height: 300px;
+                border-radius: 10px;
+            }
+            h2 {
+                text-align: center;
+                padding: 25px 10px 15px;
+                color: #09455a;
+                font-size: 34px;
+                line-height: 45px;
+            }
+            h3 {
+                padding: 0 10px;
+                font-size: 14px;
+                line-height: 26px;
+            }
+
+            span {
+                display: none;
+            }
+        }
+        .Block:hover span {
+            display: block;
+        }
+    }
+    .buttonLike {
+        color: #ffff;
+        background: none;
+        position: absolute;
+        top: 260px;
+        right: 0;
+        width: 40px;
+        height: 40px;
+    }
+    .buttonLike:hover {
+        color: #14b9f1;
+        border: 2px solid #14b9f1;
+        border-radius: 5px;
+    }
+
+    .activitiesPageInfo {
+        h1 {
+            padding: 15px 0;
+            font-size: 40px;
+            line-height: 56px;
+        }
+        .mountainBikingPageTasks {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            margin: 30px 0;
+            h2 {
+                font-family: 'IBM Plex Sans';
+                font-weight: 700;
+                font-size: 26px;
+                line-height: 26px;
+                padding-bottom: 5px;
+            }
+        }
+        .iconBlock {
+            border-radius: 65px;
+            width: 80px;
+            height: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #ff9600;
+
+            .icon {
+                width: 60px;
+                height: 60px;
+
+                color: #ffffff;
+            }
+        }
+        .iconBlock:hover {
+            background-color: #14b9f1;
+        }
+    }
+
+    .mountainBikingPageImg {
+        background-image: url(../ActivitiesComponents/img/mountainBikingPageImg.png);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        border-radius: 10px;
+        width: 100%;
+        height: 570px;
+    }
+
+    hr {
+        margin: 0;
+        width: 100%;
+    }
+}

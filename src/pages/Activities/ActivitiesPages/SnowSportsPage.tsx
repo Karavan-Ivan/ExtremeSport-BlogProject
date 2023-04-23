@@ -1,4 +1,5 @@
 import SnowSports from '../ActivitiesComponents/SnowSports'
+import './ActivitiesPages.scss'
 
 type Props = {}
 

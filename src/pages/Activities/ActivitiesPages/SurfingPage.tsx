@@ -1,4 +1,5 @@
 import Surfing from '../ActivitiesComponents/Surfing'
+import './ActivitiesPages.scss'
 
 type Props = {}
 

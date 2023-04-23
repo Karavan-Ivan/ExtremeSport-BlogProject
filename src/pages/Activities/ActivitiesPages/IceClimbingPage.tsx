@@ -1,4 +1,5 @@
 import IceClimbing from '../ActivitiesComponents/IceClimbing'
+import './ActivitiesPages.scss'
 
 type Props = {}
 

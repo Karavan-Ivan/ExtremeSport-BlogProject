@@ -2,6 +2,7 @@ import { Grid } from '@mui/material'
 import Item from '@mui/material/Grid'
 import SurreyHills from '../ActivitiesComponents/img/SurreyHills.png'
 import WoburnTrails from '../ActivitiesComponents/img/WoburnTrails.png'
+import FavoriteIcon from '@mui/icons-material/Favorite'
 
 type Props = {}
 
@@ -34,6 +35,7 @@ const MountainBiking = (props: Props) => {
                                 continues to be welcomed here.
                             </span>
                         </h3>
+                        <FavoriteIcon className="buttonLike" />
                     </Item>
                 </Grid>
                 <Grid item md={4} lg={4} xl={4}>
@@ -57,6 +59,7 @@ const MountainBiking = (props: Props) => {
                                 membership is required to ride.
                             </span>
                         </h3>
+                        <FavoriteIcon className="buttonLike" />
                     </Item>
                 </Grid>
             </Grid>

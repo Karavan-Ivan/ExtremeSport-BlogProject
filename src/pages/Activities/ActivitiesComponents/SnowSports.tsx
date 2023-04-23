@@ -2,6 +2,7 @@ import { Grid } from '@mui/material'
 import Item from '@mui/material/Grid'
 import BeaverCreek from '../ActivitiesComponents/img/BeaverCreek.png'
 import Courchevel from '../ActivitiesComponents/img/Courchevel.png'
+import FavoriteIcon from '@mui/icons-material/Favorite'
 
 type Props = {}
 
@@ -25,6 +26,7 @@ const SnowSports = (props: Props) => {
                                 wee hours in Les Caves or La Grange.
                             </span>
                         </h3>
+                        <FavoriteIcon className="buttonLike" />
                     </Item>
                 </Grid>
                 <Grid item md={4} lg={4} xl={4}>
@@ -43,6 +45,7 @@ const SnowSports = (props: Props) => {
                                 street fair with music, magic and more.
                             </span>
                         </h3>
+                        <FavoriteIcon className="buttonLike" />
                     </Item>
                 </Grid>
             </Grid>

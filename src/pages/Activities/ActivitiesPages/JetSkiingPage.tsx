@@ -1,4 +1,5 @@
 import JetSkiing from '../ActivitiesComponents/JetSkiing'
+import './ActivitiesPages.scss'
 
 type Props = {}
 

@@ -2,6 +2,7 @@ import { Grid } from '@mui/material'
 import Item from '@mui/material/Grid'
 import HelmckenFalls from '../ActivitiesComponents/img/HelmckenFalls.png'
 import SandstoneIcePark from '../ActivitiesComponents/img/SandstoneIcePark.png'
+import FavoriteIcon from '@mui/icons-material/Favorite'
 
 type Props = {}
 
@@ -27,6 +28,7 @@ const IceClimbing = (props: Props) => {
                                 ultimate ascent known as Wolverine.
                             </span>
                         </h3>
+                        <FavoriteIcon className="buttonLike" />
                     </Item>
                 </Grid>
                 <Grid item md={4} lg={4} xl={4}>
@@ -46,6 +48,7 @@ const IceClimbing = (props: Props) => {
                                 more than 20m of challenging vertical ice.
                             </span>
                         </h3>
+                        <FavoriteIcon className="buttonLike" />
                     </Item>
                 </Grid>
             </Grid>

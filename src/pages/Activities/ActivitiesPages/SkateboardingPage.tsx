@@ -1,4 +1,5 @@
 import Skateboarding from '../ActivitiesComponents/Skateboarding'
+import './ActivitiesPages.scss'
 
 type Props = {}
 

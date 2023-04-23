@@ -2,6 +2,7 @@ import { Grid } from '@mui/material'
 import Item from '@mui/material/Grid'
 import Berlin from '../ActivitiesComponents/img/Berlin.png'
 import Barcelona from '../ActivitiesComponents/img/Barcelona.png'
+import FavoriteIcon from '@mui/icons-material/Favorite'
 
 type Props = {}
 
@@ -24,6 +25,7 @@ const Skateboarding = (props: Props) => {
                                 Barcelona is a must-visit on any skater’s list.
                             </span>
                         </h3>
+                        <FavoriteIcon className="buttonLike" />
                     </Item>
                 </Grid>
                 <Grid item md={4} lg={4} xl={4}>
@@ -46,6 +48,7 @@ const Skateboarding = (props: Props) => {
                                 world.
                             </span>
                         </h3>
+                        <FavoriteIcon className="buttonLike" />
                     </Item>
                 </Grid>
             </Grid>
