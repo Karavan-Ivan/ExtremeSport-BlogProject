@@ -1,6 +1,6 @@
-import { Button } from '@mui/material'
 import Grid from '@mui/material/Grid'
 import Item from '@mui/material/Grid'
+import { Link } from 'react-router-dom'
 import ExpandCircleDownTwoToneIcon from '@mui/icons-material/ExpandCircleDownTwoTone'
 import './JoinUs.scss'
 import aboutExtremeSports1 from './img/about-extreme-sports-1.jpg'
@@ -42,9 +42,11 @@ const JoinUs = (props: Props) => {
                             Accusantium dolore que laudantium totamrem periam
                         </li>
                     </ul>
-                    <Button variant="outlined" className="button">
-                        Discover More
-                    </Button>
+                    <button className="button">
+                        <Link to="/AboutUs" className="activeNavButton">
+                            Discover More
+                        </Link>
+                    </button>
                 </Item>
             </Grid>
             <Grid item md={6} alignSelf="center">

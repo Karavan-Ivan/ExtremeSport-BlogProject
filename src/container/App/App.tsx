@@ -16,6 +16,8 @@ import SkateboardingPage from 'pages/Activities/ActivitiesPages/SkateboardingPag
 import JetSkiingPage from 'pages/Activities/ActivitiesPages/JetSkiingPage'
 import IceClimbingPage from 'pages/Activities/ActivitiesPages/IceClimbingPage'
 import Contact from 'pages/Contact/Contact'
+import Instructors from 'pages/AboutUs/AboutUsComponents/Instructors/Instructors'
+import path from 'path'
 
 type Props = {}
 
@@ -28,22 +30,22 @@ const App = (props: Props) => {
             <CssBaseline />
             <Header />
             <Routes>
-                <Route path="/Main" element={<Main />} />
+                <Route path="/" element={<Main />} />
                 <Route path="/AboutUs" element={<AboutUs />} />
                 <Route path="/Activities" element={<Activities />}></Route>
                 <Route
-                    path="/Mountain Biking"
+                    path="/MountainBiking"
                     element={<MountainBikingPage />}
                 ></Route>
-                <Route path="/Snow Sports" element={<SnowSportsPage />}></Route>
+                <Route path="/SnowSports" element={<SnowSportsPage />}></Route>
                 <Route path="/Surfing" element={<SurfingPage />}></Route>
                 <Route
                     path="/Skateboarding"
                     element={<SkateboardingPage />}
                 ></Route>
-                <Route path="/Jet Skiing" element={<JetSkiingPage />}></Route>
+                <Route path="/JetSkiing" element={<JetSkiingPage />}></Route>
                 <Route
-                    path="/Ice Climbing"
+                    path="/IceClimbing"
                     element={<IceClimbingPage />}
                 ></Route>
                 <Route path="/Contact" element={<Contact />}></Route>

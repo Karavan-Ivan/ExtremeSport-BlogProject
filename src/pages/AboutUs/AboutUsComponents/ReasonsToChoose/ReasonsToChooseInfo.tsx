@@ -1,11 +1,11 @@
 import Grid from '@mui/material/Grid'
 import Item from '@mui/material/Grid'
 import ExpandCircleDownTwoToneIcon from '@mui/icons-material/ExpandCircleDownTwoTone'
-import { Button } from '@mui/material'
 import SnowboardingIcon from '@mui/icons-material/Snowboarding'
 import SportsMartialArtsIcon from '@mui/icons-material/SportsMartialArts'
 import AccessibilityNewIcon from '@mui/icons-material/AccessibilityNew'
 import HikingIcon from '@mui/icons-material/Hiking'
+import { Link } from 'react-router-dom'
 
 type Props = {}
 
@@ -41,9 +41,11 @@ const ReasonsToChooseInfo = (props: Props) => {
                                 periam
                             </li>
                         </ul>
-                        <Button variant="outlined" className="button">
-                            View Activities
-                        </Button>
+                        <button className="button">
+                            <Link to="/Activities" className="activeNavButton">
+                                View Activities
+                            </Link>
+                        </button>
                     </Item>
                 </Grid>
                 <Grid item md={7} xl={7} lg={7}>

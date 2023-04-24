@@ -8,8 +8,21 @@
     line-height: 21px;
     width: 200px;
     height: 60px;
+    text-decoration: none;
+    text-transform: none;
 }
 
 .button:hover {
     background-color: #0c3543;
+}
+
+.activeNavButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: none;
+    width: 100%;
+    height: 100%;
 }

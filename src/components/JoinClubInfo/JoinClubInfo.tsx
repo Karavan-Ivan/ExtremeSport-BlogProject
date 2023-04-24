@@ -1,5 +1,6 @@
 import JoinClubInfoBloks from 'components/JoinClubInfoBloks/JoinClubInfoBloks'
 import './JoinClubInfo.scss'
+import { Link } from 'react-router-dom'
 
 type Props = {}
 
@@ -12,7 +13,11 @@ const JoinClubInfo = (props: Props) => {
                     To The Max
                 </h1>
                 <h3>Be Prepared To Experience The New Adventures</h3>
-                <button className="button">Join Our Club</button>
+                <button className="button">
+                    <Link to="/Contact" className="activeNavButton">
+                        Join Our Club
+                    </Link>
+                </button>
             </div>
             <JoinClubInfoBloks />
         </>

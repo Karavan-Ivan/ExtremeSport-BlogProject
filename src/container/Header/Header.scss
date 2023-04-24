@@ -21,16 +21,23 @@
     button:hover {
         color: #ff9600;
     }
-    .MenuButton {
-        color: #ffffff;
-        text-decoration: none;
-    }
-    .MenuButton:hover {
-        color: #ff9600;
-    }
+
     .activeMenuButton {
         color: #ff9600;
         text-decoration: none;
+        width: 100%;
+        height: 100%;
+        display: inline-block;
+    }
+    .MenuButton {
+        color: #ffffff;
+        text-decoration: none;
+        width: 100%;
+        height: 100%;
+        display: inline-block;
+    }
+    .MenuButton:hover {
+        color: #ff9600;
     }
 
     .dropDownBtn {

@@ -1,4 +1,5 @@
 import { useKeenSlider, KeenSliderPlugin } from 'keen-slider/react'
+import { Link } from 'react-router-dom'
 import './Slider.scss'
 import 'keen-slider/keen-slider.min.css'
 import iceClimbing from './img/ice-climbing.jpg'
@@ -44,33 +45,73 @@ export default function Slider() {
             <div className="scene">
                 <div className="carousel keen-slider" ref={sliderRef}>
                     <div className="carousel__cell number-slide1 ">
-                        <img src={mountainBiking} />
-                        <h1>Mountain Biking</h1>
+                        <Link to="/MountainBiking">
+                            <img src={mountainBiking} />
+                        </Link>
+
+                        <h1>
+                            <Link
+                                to="/MountainBiking"
+                                className="activeNavLink"
+                            >
+                                Mountain Biking
+                            </Link>
+                        </h1>
                         <h3>Dolor sit amet magna</h3>
                     </div>
                     <div className="carousel__cell number-slide2">
-                        <img src={snowSports} />
-                        <h1>Snow Sports</h1>
+                        <Link to="/SnowSports">
+                            <img src={snowSports} />
+                        </Link>
+                        <h1>
+                            <Link to="/SnowSports" className="activeNavLink">
+                                Snow Sports
+                            </Link>
+                        </h1>
                         <h3>Dolor sit amet magna</h3>
                     </div>
                     <div className="carousel__cell number-slide3">
-                        <img src={surfing} />
-                        <h1>Surfing</h1>
+                        <Link to="/Surfing">
+                            <img src={surfing} />
+                        </Link>
+                        <h1>
+                            <Link to="/Surfing" className="activeNavLink">
+                                Surfing
+                            </Link>
+                        </h1>
                         <h3>Dolor sit amet magna</h3>
                     </div>
                     <div className="carousel__cell number-slide4">
-                        <img src={skateboarding} />
-                        <h1>Skateboarding</h1>
+                        <Link to="/Skateboarding">
+                            <img src={skateboarding} />
+                        </Link>
+                        <h1>
+                            <Link to="/Skateboarding" className="activeNavLink">
+                                Skateboarding
+                            </Link>
+                        </h1>
                         <h3>Dolor sit amet magna</h3>
                     </div>
                     <div className="carousel__cell number-slide5">
-                        <img src={jetskiing} />
-                        <h1>Jet Skiing</h1>
+                        <Link to="/JetSkiing">
+                            <img src={jetskiing} />
+                        </Link>
+                        <h1>
+                            <Link to="/JetSkiing" className="activeNavLink">
+                                Jet Skiing
+                            </Link>
+                        </h1>
                         <h3>Dolor sit amet magna</h3>
                     </div>
                     <div className="carousel__cell number-slide6">
-                        <img src={iceClimbing} />
-                        <h1>Ice Climbing</h1>
+                        <Link to="/IceClimbing">
+                            <img src={iceClimbing} />
+                        </Link>
+                        <h1>
+                            <Link to="/IceClimbing" className="activeNavLink">
+                                Ice Climbing
+                            </Link>
+                        </h1>
                         <h3>Dolor sit amet magna</h3>
                     </div>
                 </div>

@@ -1,6 +1,7 @@
 import { Grid } from '@mui/material'
 import Item from '@mui/material/Grid'
 import './JoinClubInfoBloks.scss'
+import { Link } from 'react-router-dom'
 
 type Props = {}
 
@@ -16,20 +17,24 @@ const JoinClubInfoBloks = (props: Props) => {
                 </Item>
             </Grid>
             <Grid item md={4} lg={4} xl={4} className="gridBlock">
-                <Item className="block clubActivities">
-                    <h1>Club activities</h1>
-                    <h2>View all sports</h2>
-                    <hr />
-                    <h3>Look</h3>
-                </Item>
+                <Link to="/Activities" className="activeNavLink">
+                    <Item className="block clubActivities">
+                        <h1>Club activities</h1>
+                        <h2>View all sports</h2>
+                        <hr />
+                        <h3>Look</h3>
+                    </Item>
+                </Link>
             </Grid>
             <Grid item md={4} lg={4} xl={4} className="gridBlock">
-                <Item className="block team">
-                    <h1>Meet our team</h1>
-                    <h2>The instructors</h2>
-                    <hr />
-                    <h3>Check</h3>
-                </Item>
+                <Link to="/AboutUs" className="activeNavLink">
+                    <Item className="block team">
+                        <h1>Meet our team</h1>
+                        <h2>The instructors</h2>
+                        <hr />
+                        <h3>Check</h3>
+                    </Item>
+                </Link>
             </Grid>
         </Grid>
     )

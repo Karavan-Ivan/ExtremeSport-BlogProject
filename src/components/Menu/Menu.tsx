@@ -7,7 +7,7 @@ const Menu = (props: Props) => {
     return (
         <div className="menu">
             <button>
-                <NavLink to="/Main" className={setActive}>
+                <NavLink to="/" className={setActive}>
                     Home
                 </NavLink>
             </button>
@@ -21,15 +21,12 @@ const Menu = (props: Props) => {
                     Activities
                     <div className="dropDownContent">
                         <li>
-                            <NavLink
-                                to="/Mountain Biking"
-                                className={setActive}
-                            >
+                            <NavLink to="/MountainBiking" className={setActive}>
                                 Mountain Biking
                             </NavLink>
                         </li>
                         <li>
-                            <NavLink to="/Snow Sports" className={setActive}>
+                            <NavLink to="/SnowSports" className={setActive}>
                                 Snow Sports
                             </NavLink>
                         </li>
@@ -44,12 +41,12 @@ const Menu = (props: Props) => {
                             </NavLink>
                         </li>
                         <li>
-                            <NavLink to="/Jet Skiing" className={setActive}>
+                            <NavLink to="/JetSkiing" className={setActive}>
                                 Jet Skiing
                             </NavLink>
                         </li>
                         <li>
-                            <NavLink to="/Ice Climbing" className={setActive}>
+                            <NavLink to="/IceClimbing" className={setActive}>
                                 Ice Climbing
                             </NavLink>
                         </li>
