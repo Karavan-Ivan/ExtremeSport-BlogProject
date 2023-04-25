@@ -1,15 +1,26 @@
 import { Grid } from '@mui/material'
 import Item from '@mui/material/Grid'
+import activitiesArray from 'utils/activitiesArray'
 import IceClimbing from '../ActivitiesComponents/IceClimbing'
-import './ActivitiesPages.scss'
 import logoOrange from '../ActivitiesComponents/img/logoOrange.png'
+import ActivitiesBlock from '../ActivitiesComponents/ActivitiesBlock'
+import '../ActivitiesComponents/ActivitiesPages.scss'
 
 type Props = {}
+
+type Activities = {
+    id: number
+    title: string
+    description: string
+    image: string
+    category: string
+    descriptionFull: string
+}
 
 const IceClimbingPage = (props: Props) => {
     return (
         <div className="mainContainer activitiesPages">
-            <Grid container spacing={6}>
+            <Grid container spacing={6} className="Blocks">
                 <Grid item md={6} xl={6} lg={6}>
                     <Item className="activitiesPageInfo">
                         <img src={logoOrange} alt="" />
@@ -60,7 +71,33 @@ const IceClimbingPage = (props: Props) => {
                 </Grid>
             </Grid>
             <hr />
-            <IceClimbing />
+            <Grid container spacing={6} className="Blocks">
+                {activitiesArray
+                    .filter((item) => item.category === 'Ice Climbing')
+                    .map(
+                        ({
+                            id,
+                            title,
+                            description,
+                            image,
+                            category,
+                            descriptionFull,
+                        }: Activities) => (
+                            <Grid item md={4} lg={4} xl={4}>
+                                <Item className="Block">
+                                    <ActivitiesBlock
+                                        id={id}
+                                        title={title}
+                                        description={description}
+                                        image={image}
+                                        category={category}
+                                        descriptionFull={descriptionFull}
+                                    />
+                                </Item>
+                            </Grid>
+                        )
+                    )}
+            </Grid>
         </div>
     )
 }

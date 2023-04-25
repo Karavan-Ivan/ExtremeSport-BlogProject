@@ -16,8 +16,8 @@ import SkateboardingPage from 'pages/Activities/ActivitiesPages/SkateboardingPag
 import JetSkiingPage from 'pages/Activities/ActivitiesPages/JetSkiingPage'
 import IceClimbingPage from 'pages/Activities/ActivitiesPages/IceClimbingPage'
 import Contact from 'pages/Contact/Contact'
-import Instructors from 'pages/AboutUs/AboutUsComponents/Instructors/Instructors'
-import path from 'path'
+import Favorites from 'pages/Favorites/Favorites'
+import { useState } from 'react'
 
 type Props = {}
 
@@ -48,6 +48,7 @@ const App = (props: Props) => {
                     path="/IceClimbing"
                     element={<IceClimbingPage />}
                 ></Route>
+                <Route path="/Favorites" element={<Favorites />}></Route>
                 <Route path="/Contact" element={<Contact />}></Route>
             </Routes>
 

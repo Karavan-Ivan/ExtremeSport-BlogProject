@@ -1,10 +1,21 @@
 import { Grid } from '@mui/material'
 import Item from '@mui/material/Grid'
 import SnowSports from '../ActivitiesComponents/SnowSports'
-import './ActivitiesPages.scss'
 import logoOrange from '../ActivitiesComponents/img/logoOrange.png'
+import activitiesArray from 'utils/activitiesArray'
+import ActivitiesBlock from '../ActivitiesComponents/ActivitiesBlock'
+import '../ActivitiesComponents/ActivitiesPages.scss'
 
 type Props = {}
+
+type Activities = {
+    id: number
+    title: string
+    description: string
+    image: string
+    category: string
+    descriptionFull: string
+}
 
 const SnowSportsPage = (props: Props) => {
     return (
@@ -35,7 +46,33 @@ const SnowSportsPage = (props: Props) => {
                 </Grid>
             </Grid>
             <hr />
-            <SnowSports />
+            <Grid container spacing={6} className="Blocks">
+                {activitiesArray
+                    .filter((item) => item.category === 'Snow Sports')
+                    .map(
+                        ({
+                            id,
+                            title,
+                            description,
+                            image,
+                            category,
+                            descriptionFull,
+                        }: Activities) => (
+                            <Grid item md={4} lg={4} xl={4}>
+                                <Item className="Block">
+                                    <ActivitiesBlock
+                                        id={id}
+                                        title={title}
+                                        description={description}
+                                        image={image}
+                                        category={category}
+                                        descriptionFull={descriptionFull}
+                                    />
+                                </Item>
+                            </Grid>
+                        )
+                    )}
+            </Grid>
         </div>
     )
 }

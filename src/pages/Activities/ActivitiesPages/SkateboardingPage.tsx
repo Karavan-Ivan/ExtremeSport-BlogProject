@@ -1,10 +1,21 @@
 import { Grid } from '@mui/material'
 import Item from '@mui/material/Grid'
 import Skateboarding from '../ActivitiesComponents/Skateboarding'
-import './ActivitiesPages.scss'
 import ExpandCircleDownTwoToneIcon from '@mui/icons-material/ExpandCircleDownTwoTone'
+import activitiesArray from 'utils/activitiesArray'
+import ActivitiesBlock from '../ActivitiesComponents/ActivitiesBlock'
+import '../ActivitiesComponents/ActivitiesPages.scss'
 
 type Props = {}
+
+type Activities = {
+    id: number
+    title: string
+    description: string
+    image: string
+    category: string
+    descriptionFull: string
+}
 
 const SkateboardingPage = (props: Props) => {
     return (
@@ -45,7 +56,33 @@ const SkateboardingPage = (props: Props) => {
                 </Grid>
             </Grid>
             <hr />
-            <Skateboarding />
+            <Grid container spacing={6} className="Blocks">
+                {activitiesArray
+                    .filter((item) => item.category === 'Skateboarding')
+                    .map(
+                        ({
+                            id,
+                            title,
+                            description,
+                            image,
+                            category,
+                            descriptionFull,
+                        }: Activities) => (
+                            <Grid item md={4} lg={4} xl={4}>
+                                <Item className="Block">
+                                    <ActivitiesBlock
+                                        id={id}
+                                        title={title}
+                                        description={description}
+                                        image={image}
+                                        category={category}
+                                        descriptionFull={descriptionFull}
+                                    />
+                                </Item>
+                            </Grid>
+                        )
+                    )}
+            </Grid>
         </div>
     )
 }

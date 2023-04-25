@@ -54,7 +54,11 @@ const Menu = (props: Props) => {
                 </NavLink>
             </button>
 
-            <button>Latest News</button>
+            <button>
+                <NavLink to="/Favorites" className={setActive}>
+                    Favorites
+                </NavLink>
+            </button>
             <button>
                 <NavLink to="/Contact" className={setActive}>
                     Contact

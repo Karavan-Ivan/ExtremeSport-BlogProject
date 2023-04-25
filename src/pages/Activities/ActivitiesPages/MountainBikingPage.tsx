@@ -2,11 +2,22 @@ import { Grid } from '@mui/material'
 import Item from '@mui/material/Grid'
 import MountainBiking from '../ActivitiesComponents/MountainBiking'
 import logoOrange from '../ActivitiesComponents/img/logoOrange.png'
-import './ActivitiesPages.scss'
 import MonochromePhotosIcon from '@mui/icons-material/MonochromePhotos'
 import SettingsAccessibilityIcon from '@mui/icons-material/SettingsAccessibility'
+import activitiesArray from 'utils/activitiesArray'
+import ActivitiesBlock from '../ActivitiesComponents/ActivitiesBlock'
+import '../ActivitiesComponents/ActivitiesPages.scss'
 
 type Props = {}
+
+type Activities = {
+    id: number
+    title: string
+    description: string
+    image: string
+    category: string
+    descriptionFull: string
+}
 
 const MountainBikingPage = (props: Props) => {
     return (
@@ -53,7 +64,33 @@ const MountainBikingPage = (props: Props) => {
                 </Grid>
             </Grid>
             <hr />
-            <MountainBiking />
+            <Grid container spacing={6} className="Blocks">
+                {activitiesArray
+                    .filter((item) => item.category === 'Mountain Biking')
+                    .map(
+                        ({
+                            id,
+                            title,
+                            description,
+                            image,
+                            category,
+                            descriptionFull,
+                        }: Activities) => (
+                            <Grid item md={4} lg={4} xl={4}>
+                                <Item className="Block">
+                                    <ActivitiesBlock
+                                        id={id}
+                                        title={title}
+                                        description={description}
+                                        image={image}
+                                        category={category}
+                                        descriptionFull={descriptionFull}
+                                    />
+                                </Item>
+                            </Grid>
+                        )
+                    )}
+            </Grid>
         </div>
     )
 }

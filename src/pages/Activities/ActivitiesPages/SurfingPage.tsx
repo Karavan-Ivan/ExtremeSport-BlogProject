@@ -1,11 +1,22 @@
 import { Grid } from '@mui/material'
 import Item from '@mui/material/Grid'
 import Surfing from '../ActivitiesComponents/Surfing'
-import './ActivitiesPages.scss'
 import surfingPageImg1 from '../ActivitiesComponents/img/surfingPageImg1.png'
 import surfingPageImg2 from '../ActivitiesComponents/img/surfingPageImg2.png'
+import activitiesArray from 'utils/activitiesArray'
+import ActivitiesBlock from '../ActivitiesComponents/ActivitiesBlock'
+import '../ActivitiesComponents/ActivitiesPages.scss'
 
 type Props = {}
+
+type Activities = {
+    id: number
+    title: string
+    description: string
+    image: string
+    category: string
+    descriptionFull: string
+}
 
 const SurfingPage = (props: Props) => {
     return (
@@ -41,7 +52,33 @@ const SurfingPage = (props: Props) => {
                 </Grid>
             </Grid>
             <hr />
-            <Surfing />
+            <Grid container spacing={6} className="Blocks">
+                {activitiesArray
+                    .filter((item) => item.category === 'Surfing')
+                    .map(
+                        ({
+                            id,
+                            title,
+                            description,
+                            image,
+                            category,
+                            descriptionFull,
+                        }: Activities) => (
+                            <Grid item md={4} lg={4} xl={4}>
+                                <Item className="Block">
+                                    <ActivitiesBlock
+                                        id={id}
+                                        title={title}
+                                        description={description}
+                                        image={image}
+                                        category={category}
+                                        descriptionFull={descriptionFull}
+                                    />
+                                </Item>
+                            </Grid>
+                        )
+                    )}
+            </Grid>
         </div>
     )
 }

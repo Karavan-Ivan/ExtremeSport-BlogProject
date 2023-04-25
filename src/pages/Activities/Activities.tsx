@@ -1,49 +1,49 @@
-import MountainBiking from './ActivitiesComponents/MountainBiking'
+import activitiesArray from 'utils/activitiesArray'
 import './Activities.scss'
-import SnowSports from './ActivitiesComponents/SnowSports'
-import Surfing from './ActivitiesComponents/Surfing'
-import Skateboarding from './ActivitiesComponents/Skateboarding'
-import JetSkiing from './ActivitiesComponents/JetSkiing'
-import IceClimbing from './ActivitiesComponents/IceClimbing'
+import { Grid } from '@mui/material'
+import Item from '@mui/material/Grid'
+import ActivitiesBlock from './ActivitiesComponents/ActivitiesBlock'
 
 type Props = {}
 
+type Activities = {
+    id: number
+    title: string
+    description: string
+    image: string
+    category: string
+    descriptionFull: string
+}
+
 const Activities = (props: Props) => {
     return (
-        <>
-            <div className="Activities mainContainer">
-                <div>
-                    <h1>Mountain Biking</h1>
-                    <hr />
-                    <MountainBiking />
-                </div>
-                <div>
-                    <h1>Snow Sports</h1>
-                    <hr />
-                    <SnowSports />
-                </div>
-                <div>
-                    <h1>Surfing</h1>
-                    <hr />
-                    <Surfing />
-                </div>
-                <div>
-                    <h1>Skateboarding</h1>
-                    <hr />
-                    <Skateboarding />
-                </div>
-                <div>
-                    <h1>Jet Skiing</h1>
-                    <hr />
-                    <JetSkiing />
-                </div>
-                <div>
-                    <h1>Ice Climbing</h1>
-                    <hr />
-                    <IceClimbing />
-                </div>
-            </div>
-        </>
+        <div className="Activities mainContainer">
+            <Grid container spacing={6} className="Blocks">
+                {activitiesArray.map(
+                    ({
+                        id,
+                        title,
+                        description,
+                        image,
+                        category,
+                        descriptionFull,
+                    }: Activities) => (
+                        <Grid item md={4} lg={4} xl={4}>
+                            <Item className="Block">
+                                <ActivitiesBlock
+                                    id={id}
+                                    title={title}
+                                    description={description}
+                                    image={image}
+                                    category={category}
+                                    descriptionFull={descriptionFull}
+                                />
+                            </Item>
+                        </Grid>
+                    )
+                )}
+            </Grid>
+        </div>
     )
 }
 

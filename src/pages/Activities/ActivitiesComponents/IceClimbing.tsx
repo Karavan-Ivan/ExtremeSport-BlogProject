@@ -3,10 +3,13 @@ import Item from '@mui/material/Grid'
 import HelmckenFalls from '../ActivitiesComponents/img/HelmckenFalls.png'
 import SandstoneIcePark from '../ActivitiesComponents/img/SandstoneIcePark.png'
 import FavoriteIcon from '@mui/icons-material/Favorite'
+import { useAppSelector } from 'redux/hooks'
 
 type Props = {}
 
 const IceClimbing = (props: Props) => {
+    const isLiked = useAppSelector((state) => state.productsLike)
+
     return (
         <>
             <Grid container spacing={4} className="Blocks">
@@ -28,7 +31,12 @@ const IceClimbing = (props: Props) => {
                                 ultimate ascent known as Wolverine.
                             </span>
                         </h3>
-                        <FavoriteIcon className="buttonLike" />
+
+                        {isLiked ? (
+                            <FavoriteIcon className="buttonLike" />
+                        ) : (
+                            <FavoriteIcon className="buttonNotLike" />
+                        )}
                     </Item>
                 </Grid>
                 <Grid item md={4} lg={4} xl={4}>

@@ -1,6 +1,5 @@
 .Activities {
     margin-top: 50px;
-    gap: 50px;
     .Blocks {
         .Block {
             background-color: #f7f7f7;
@@ -31,18 +30,36 @@
             display: block;
         }
     }
+
     .buttonLike {
         color: #ffff;
         background: none;
         position: absolute;
         top: 260px;
         right: 0;
-        width: 40px;
-        height: 40px;
+        width: auto;
+        height: auto;
+        border: none;
+        padding: 0;
     }
-    .buttonLike:hover {
+
+    .like {
         color: #14b9f1;
         border: 2px solid #14b9f1;
         border-radius: 5px;
+        background: none;
+        width: 40px;
+        height: 40px;
+    }
+    .notLike:hover {
+        color: #14b9f1;
+        border: 2px solid #14b9f1;
+        border-radius: 5px;
+    }
+    .notLike {
+        color: #ffff;
+        background: none;
+        width: 40px;
+        height: 40px;
     }
 }
