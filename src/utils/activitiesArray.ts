@@ -34,12 +34,12 @@ const activitiesArray: Activities[] = [
         id: 3,
         title: 'Courchevel 1850, France',
         description:
-            'Courchevel 1850 is both the highest in elevation and in prices in the Three Valleys (Les Trois Vallées of Courchevel, Meribel and Les Menuires)',
+            'Courchevel 1850 is both the highest in elevation and in prices in the Three Valleys (Les Trois Vallées of Courchevel, Meribel and Les Menuires), which now includes a fourth valley in France – Maurienne.',
 
         image: '/images/Courchevel.png',
         category: 'Snow Sports',
         descriptionFull:
-            ' which now includes a fourth valley in France – Maurienne. There’s plenty of entertainment off-piste. Hot and happening apres-ski spots include Le Tremplin or Kudeta. Or dance till the wee hours in Les Caves or La Grange.',
+            'There’s plenty of entertainment off-piste. Hot and happening apres-ski spots include Le Tremplin or Kudeta. Or dance till the wee hours in Les Caves or La Grange.',
     },
     {
         id: 4,
@@ -67,12 +67,12 @@ const activitiesArray: Activities[] = [
         id: 6,
         title: 'Teahupoo, Tahiti',
         description:
-            'If you’re looking for an epic surfing experience, then look no further than Teahupoo. As one of the best surf destinations around the world',
+            'If you’re looking for an epic surfing experience, then look no further than Teahupoo. As one of the best surf destinations around the world, it is known for its huge waves that can reach up to 30 feet.',
 
         image: '/images/Teahupoo.png',
         category: 'Surfing',
         descriptionFull:
-            ', it is known for its huge waves that can reach up to 30 feet. The takeoff is especially challenging, as the wave often breaks in a very shallow area. Teahupoo is located on the south coast of Tahiti and can only be reached by boat. There are a few resorts located in the area, but for the most part, it is undeveloped.',
+            'The takeoff is especially challenging, as the wave often breaks in a very shallow area. Teahupoo is located on the south coast of Tahiti and can only be reached by boat. There are a few resorts located in the area, but for the most part, it is undeveloped.',
     },
     {
         id: 7,
@@ -89,7 +89,7 @@ const activitiesArray: Activities[] = [
         id: 8,
         title: 'Berlin',
         description:
-            'Berlin is a city that’s known for its alternative culture, and skateboarding is no exception. ',
+            'Berlin is a city that’s known for its alternative culture, and skateboarding is no exception.',
 
         image: '/images/Berlin.png',
         category: 'Skateboarding',

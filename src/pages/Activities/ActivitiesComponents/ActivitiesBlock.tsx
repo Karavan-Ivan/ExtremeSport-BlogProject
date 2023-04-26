@@ -3,6 +3,7 @@ import { useAppDispatch, useAppSelector } from 'redux/hooks'
 import './ActivitiesPages.scss'
 import { Button } from 'react-bootstrap'
 import { toogleLike } from 'redux/likeReducer'
+import { doc } from 'prettier'
 
 type Props = {
     id: number
@@ -28,10 +29,8 @@ const ActivitiesBlock = ({
         <>
             <img src={image} alt="" />
             <h2>{title}</h2>
-            <h3>
-                {description}
-                <span className="descriptionFull">{descriptionFull}</span>
-            </h3>
+            <h3>{description}</h3>
+            <span>{descriptionFull}</span>
             <Button
                 variant="outlined"
                 className="buttonLike"

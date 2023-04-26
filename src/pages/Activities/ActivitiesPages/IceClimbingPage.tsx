@@ -1,7 +1,6 @@
 import { Grid } from '@mui/material'
 import Item from '@mui/material/Grid'
 import activitiesArray from 'utils/activitiesArray'
-import IceClimbing from '../ActivitiesComponents/IceClimbing'
 import logoOrange from '../ActivitiesComponents/img/logoOrange.png'
 import ActivitiesBlock from '../ActivitiesComponents/ActivitiesBlock'
 import '../ActivitiesComponents/ActivitiesPages.scss'
@@ -20,7 +19,7 @@ type Activities = {
 const IceClimbingPage = (props: Props) => {
     return (
         <div className="mainContainer activitiesPages">
-            <Grid container spacing={6} className="Blocks">
+            <Grid container spacing={2} className="Blocks">
                 <Grid item md={6} xl={6} lg={6}>
                     <Item className="activitiesPageInfo">
                         <img src={logoOrange} alt="" />

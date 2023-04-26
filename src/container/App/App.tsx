@@ -6,7 +6,7 @@ import { StyledEngineProvider } from '@mui/material/styles'
 import 'components/Fonts/Fonts.scss'
 import 'components/Button/Button.scss'
 import 'components/UlIcons/UlIcons.scss'
-import { Route, Routes } from 'react-router-dom'
+import { Route, Routes, useLocation } from 'react-router-dom'
 import AboutUs from 'pages/AboutUs/AboutUs'
 import Activities from 'pages/Activities/Activities'
 import MountainBikingPage from 'pages/Activities/ActivitiesPages/MountainBikingPage'
@@ -17,14 +17,16 @@ import JetSkiingPage from 'pages/Activities/ActivitiesPages/JetSkiingPage'
 import IceClimbingPage from 'pages/Activities/ActivitiesPages/IceClimbingPage'
 import Contact from 'pages/Contact/Contact'
 import Favorites from 'pages/Favorites/Favorites'
-import { useState } from 'react'
 
 type Props = {}
 
 export const setActive = ({ isActive }: { isActive: any }) =>
     isActive ? 'activeMenuButton' : 'MenuButton'
 
+export const header = document.querySelector('app-bar')
+
 const App = (props: Props) => {
+    const location = useLocation()
     return (
         <StyledEngineProvider injectFirst>
             <CssBaseline />

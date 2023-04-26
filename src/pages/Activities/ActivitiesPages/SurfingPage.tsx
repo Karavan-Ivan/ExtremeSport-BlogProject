@@ -1,6 +1,5 @@
 import { Grid } from '@mui/material'
 import Item from '@mui/material/Grid'
-import Surfing from '../ActivitiesComponents/Surfing'
 import surfingPageImg1 from '../ActivitiesComponents/img/surfingPageImg1.png'
 import surfingPageImg2 from '../ActivitiesComponents/img/surfingPageImg2.png'
 import activitiesArray from 'utils/activitiesArray'

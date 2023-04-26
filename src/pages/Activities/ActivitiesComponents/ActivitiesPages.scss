@@ -22,14 +22,39 @@
                 padding: 0 10px;
                 font-size: 14px;
                 line-height: 26px;
+                position: relative;
             }
-
             span {
+                font-family: 'IBM Plex Sans', sans-serif;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 26px;
                 display: none;
+                position: absolute;
+                bottom: auto;
+                left: 0;
+                background-color: #f7f7f7;
+                padding: 0 10px;
+                border-radius: 0 0 10px 10px;
+                z-index: 1;
             }
         }
-        .Block:hover span {
-            display: block;
+        .Block:hover {
+            span {
+                display: block;
+                border: 5px solid #09455a;
+                border-top: none;
+            }
+            h3 {
+                border: 5px solid #09455a;
+                border-top: none;
+                border-bottom: none;
+            }
+            h2 {
+                border: 5px solid #09455a;
+                border-top: none;
+                border-bottom: none;
+            }
         }
     }
     .buttonLike {

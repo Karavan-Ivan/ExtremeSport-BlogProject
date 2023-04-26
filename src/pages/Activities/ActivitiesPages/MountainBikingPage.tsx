@@ -1,6 +1,5 @@
 import { Grid } from '@mui/material'
 import Item from '@mui/material/Grid'
-import MountainBiking from '../ActivitiesComponents/MountainBiking'
 import logoOrange from '../ActivitiesComponents/img/logoOrange.png'
 import MonochromePhotosIcon from '@mui/icons-material/MonochromePhotos'
 import SettingsAccessibilityIcon from '@mui/icons-material/SettingsAccessibility'

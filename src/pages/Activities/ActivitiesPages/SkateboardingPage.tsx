@@ -1,6 +1,5 @@
 import { Grid } from '@mui/material'
 import Item from '@mui/material/Grid'
-import Skateboarding from '../ActivitiesComponents/Skateboarding'
 import ExpandCircleDownTwoToneIcon from '@mui/icons-material/ExpandCircleDownTwoTone'
 import activitiesArray from 'utils/activitiesArray'
 import ActivitiesBlock from '../ActivitiesComponents/ActivitiesBlock'
