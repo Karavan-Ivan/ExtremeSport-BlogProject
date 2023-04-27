@@ -2,6 +2,9 @@
     position: relative;
     height: 100%;
     margin-top: 100px;
+    border: 5px solid #0c3543;
+    padding: 20px;
+    border-radius: 10px;
     .WhatPeopleSayingInfo {
         display: flex;
         flex-direction: column;
@@ -60,6 +63,66 @@
                 font-size: 18px;
                 line-height: 31px;
                 color: #222222;
+            }
+        }
+    }
+    .reviews {
+        background-color: #9a9c93;
+        width: auto;
+        border-radius: 10px;
+        padding: 10px 40px;
+
+        .reviewform {
+            button {
+                width: 100px;
+                height: 80px;
+                color: #ffffff;
+                font-weight: 700;
+                font-size: 25px;
+                line-height: 32px;
+                background-color: #ff9600;
+                border-radius: 5px;
+                align-self: center;
+                margin-left: 30px;
+            }
+            button:hover {
+                background-color: #14b9f1;
+            }
+            hr {
+                border: 2px solid #7e7770;
+                left: 0;
+                right: 0;
+                margin: 30px auto;
+            }
+            h3 {
+                font-family: 'IBM Plex Sans';
+                color: #222222;
+                font-weight: 700;
+                font-size: 40px;
+                line-height: 50px;
+                padding-bottom: 10px;
+            }
+            .textAreaText {
+                text-align: left;
+                width: 220px;
+                margin-top: 10px;
+
+                .textAreaTextField::placeholder {
+                    color: #222222;
+                }
+            }
+            .textAreaName {
+                text-align: left;
+                width: 220px;
+                background-color: #ffffff;
+                .textAreaNameField label {
+                    color: #222222;
+                }
+            }
+
+            .reviewField {
+                display: flex;
+                justify-content: center;
             }
         }
     }

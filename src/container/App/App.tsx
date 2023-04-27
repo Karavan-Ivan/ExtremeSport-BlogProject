@@ -9,7 +9,6 @@ import 'components/UlIcons/UlIcons.scss'
 import { Route, Routes, useLocation } from 'react-router-dom'
 import AboutUs from 'pages/AboutUs/AboutUs'
 import Activities from 'pages/Activities/Activities'
-import MountainBikingPage from 'pages/Activities/ActivitiesPages/MountainBikingPage'
 import SnowSportsPage from 'pages/Activities/ActivitiesPages/SnowSportsPage'
 import SurfingPage from 'pages/Activities/ActivitiesPages/SurfingPage'
 import SkateboardingPage from 'pages/Activities/ActivitiesPages/SkateboardingPage'
@@ -17,6 +16,7 @@ import JetSkiingPage from 'pages/Activities/ActivitiesPages/JetSkiingPage'
 import IceClimbingPage from 'pages/Activities/ActivitiesPages/IceClimbingPage'
 import Contact from 'pages/Contact/Contact'
 import Favorites from 'pages/Favorites/Favorites'
+import MountainBikingPage from 'pages/Activities/ActivitiesPages/MountainBikingPage'
 
 type Props = {}
 

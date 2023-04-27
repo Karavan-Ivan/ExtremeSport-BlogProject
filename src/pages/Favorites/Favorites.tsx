@@ -28,6 +28,8 @@ const Favorites = ({
 
     return (
         <div className="Activities mainContainer">
+            <h1 className="favoritesH1">Your Favorites</h1>
+            <hr className="favoritesHr" />
             <Grid container spacing={6} className="Blocks">
                 {Object.keys(filteredObject).map((id) => (
                     <Grid item md={4} lg={4} xl={4}>

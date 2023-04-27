@@ -2,11 +2,17 @@ import { Swiper, SwiperSlide } from 'swiper/react'
 import 'swiper/css'
 import 'swiper/css/effect-cards'
 import { EffectCards } from 'swiper'
-import AlexHaysmanComment from '../img/AlexHaysmanComment.jpg'
-import JonsonTrimphComment from '../img/JonsonTrimphComment.jpg'
-import SierrayWilliamsComment from '../img/SierrayWilliamsComment.jpg'
+import { useAppSelector } from 'redux/hooks'
+
+type Review = {
+    name: string
+    text: string
+    image: string
+}
 
 export default function App() {
+    const arrReviews = useAppSelector((state) => state.reviews)
+
     return (
         <>
             <Swiper
@@ -15,45 +21,16 @@ export default function App() {
                 modules={[EffectCards]}
                 className="mySwiper"
             >
-                <SwiperSlide>
-                    <div className="SlideInfo">
-                        <img src={JonsonTrimphComment} alt="" />
-                        <h3>
-                            Praesent posuere, risus nec aliquet lorem diam
-                            tempor est vitae finibus tortor erat sit amet dolor.
-                            Sed ipsumus neque congue biats con quatasy venenatis
-                            augue.
-                        </h3>
-                        <h2>Jonson Trimph</h2>
-                        <h2>Зірки</h2>
-                    </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                    <div className="SlideInfo">
-                        <img src={SierrayWilliamsComment} alt="" />
-                        <h3>
-                            Praesent posuere, risus nec aliquet lorem diam
-                            tempor est vitae finibus tortor erat sit amet dolor.
-                            Sed ipsumus neque congue biats con quatasy venenatis
-                            augue.
-                        </h3>
-                        <h2>Sierray Williams</h2>
-                        <h2>Зірки</h2>
-                    </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                    <div className="SlideInfo">
-                        <img src={AlexHaysmanComment} alt="" />
-                        <h3>
-                            Praesent posuere, risus nec aliquet lorem diam
-                            tempor est vitae finibus tortor erat sit amet dolor.
-                            Sed ipsumus neque congue biats con quatasy venenatis
-                            augue.
-                        </h3>
-                        <h2>Alex Haysman</h2>
-                        <h2>Зірки</h2>
-                    </div>
-                </SwiperSlide>
+                {arrReviews.map(({ name, text, image }, i) => (
+                    <SwiperSlide>
+                        <div className="SlideInfo">
+                            <img src={image} alt="" />
+                            <h3>{text}</h3>
+                            <h2>{name}</h2>
+                            <h2>Зірки</h2>
+                        </div>
+                    </SwiperSlide>
+                ))}
             </Swiper>
         </>
     )
