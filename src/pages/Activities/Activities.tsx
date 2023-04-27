@@ -18,6 +18,8 @@ type Activities = {
 const Activities = (props: Props) => {
     return (
         <div className="Activities mainContainer">
+            <h1 className="allActivitiesH1">All Activities</h1>
+            <hr />
             <Grid container spacing={6} className="Blocks">
                 {activitiesArray.map(
                     ({
