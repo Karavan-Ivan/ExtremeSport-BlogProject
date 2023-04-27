@@ -17,6 +17,7 @@ import IceClimbingPage from 'pages/Activities/ActivitiesPages/IceClimbingPage'
 import Contact from 'pages/Contact/Contact'
 import Favorites from 'pages/Favorites/Favorites'
 import MountainBikingPage from 'pages/Activities/ActivitiesPages/MountainBikingPage'
+import ActivityPage from 'pages/ActivityPage/ActivityPage'
 
 type Props = {}
 
@@ -33,24 +34,31 @@ const App = (props: Props) => {
             <Routes>
                 <Route path="/" element={<Main />} />
                 <Route path="/AboutUs" element={<AboutUs />} />
-                <Route path="/Activities" element={<Activities />}></Route>
+                <Route path="/Activities" element={<Activities />} />
                 <Route
-                    path="/MountainBiking"
+                    path="/Activities/MountainBiking"
                     element={<MountainBikingPage />}
-                ></Route>
-                <Route path="/SnowSports" element={<SnowSportsPage />}></Route>
-                <Route path="/Surfing" element={<SurfingPage />}></Route>
+                />
                 <Route
-                    path="/Skateboarding"
+                    path="/Activities/SnowSports"
+                    element={<SnowSportsPage />}
+                />
+                <Route path="/Activities/Surfing" element={<SurfingPage />} />
+                <Route
+                    path="/Activities/Skateboarding"
                     element={<SkateboardingPage />}
-                ></Route>
-                <Route path="/JetSkiing" element={<JetSkiingPage />}></Route>
+                />
                 <Route
-                    path="/IceClimbing"
+                    path="/Activities/JetSkiing"
+                    element={<JetSkiingPage />}
+                />
+                <Route
+                    path="/Activities/IceClimbing"
                     element={<IceClimbingPage />}
-                ></Route>
-                <Route path="/Favorites" element={<Favorites />}></Route>
-                <Route path="/Contact" element={<Contact />}></Route>
+                />
+                <Route path="/Favorites" element={<Favorites />} />
+                <Route path="/Contact" element={<Contact />} />
+                <Route path="activity/:id" element={<ActivityPage />} />
             </Routes>
 
             <Footer />

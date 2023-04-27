@@ -8,7 +8,7 @@ type Props = {}
 const RiskAndRewardsInfo = (props: Props) => {
     return (
         <>
-            <Grid container spacing={4} className="RiskAndRewardsInfo">
+            <Grid container spacing={8} className="RiskAndRewardsInfo">
                 <Grid item md={6} lg={6} xl={6}>
                     <Item>
                         <h2>Challenge Yourself And Push The Limits</h2>

@@ -1,0 +1,59 @@
+.ActivityPage {
+    margin-top: 100px;
+    .ActivityPageBlock {
+        background-color: #f7f7f7;
+        border-radius: 10px;
+        border: 5px solid #09455a;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        padding: 10px 30px;
+        height: 600px;
+        .activityImg {
+            height: 100%;
+            width: 60%;
+            margin-left: 50px;
+            display: flex;
+            align-items: center;
+            img {
+                width: 100%;
+                height: 450px;
+                max-height: inherit;
+                border-radius: 10px;
+            }
+        }
+
+        .activityInfo {
+            height: 100%;
+            width: 40%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            h2 {
+                text-align: left;
+                padding: 25px 10px 0;
+                color: #09455a;
+                font-size: 40px;
+                line-height: 50px;
+                a {
+                    text-decoration: none;
+                    color: #09455a;
+                    &:hover {
+                        color: #ff9600;
+                    }
+                }
+            }
+
+            h3 {
+                text-align: left;
+                padding-bottom: 25px;
+                font-size: 18px;
+                line-height: 28px;
+                font-weight: 400;
+            }
+            hr {
+                margin: 15px;
+            }
+        }
+    }
+}

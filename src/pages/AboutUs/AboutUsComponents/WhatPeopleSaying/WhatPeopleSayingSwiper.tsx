@@ -3,6 +3,7 @@ import 'swiper/css'
 import 'swiper/css/effect-cards'
 import { EffectCards } from 'swiper'
 import { useAppSelector } from 'redux/hooks'
+import FavoriteTwoToneIcon from '@mui/icons-material/FavoriteTwoTone'
 
 type Review = {
     name: string
@@ -27,7 +28,10 @@ export default function App() {
                             <img src={image} alt="" />
                             <h3>{text}</h3>
                             <h2>{name}</h2>
-                            <h2>Зірки</h2>
+                            <div className="thank">
+                                <h2>Thank you</h2>
+                                <FavoriteTwoToneIcon className="icon" />
+                            </div>
                         </div>
                     </SwiperSlide>
                 ))}

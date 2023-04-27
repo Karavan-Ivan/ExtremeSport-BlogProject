@@ -35,7 +35,26 @@
             font-size: 22px;
             font-weight: bold;
             color: #fff;
-            background-color: #14b9f1;
+            background: radial-gradient(
+                circle at 50% -20.71%,
+                #bae0e6 0,
+                #bbe0e9 6.25%,
+                #bcdfeb 12.5%,
+                #bedfed 18.75%,
+                #c0deef 25%,
+                #c3ddf0 31.25%,
+                #c6dcf1 37.5%,
+                #c9dbf2 43.75%,
+                #cddaf2 50%,
+                #d1d9f2 56.25%,
+                #d5d8f1 62.5%,
+                #d9d7f0 68.75%,
+                #ddd6ee 75%,
+                #e1d5ed 81.25%,
+                #e4d4ea 87.5%,
+                #e8d3e8 93.75%,
+                #ebd2e5 100%
+            );
         }
         .swiper-slide img {
             border-radius: 100px;
@@ -58,16 +77,51 @@
             }
             h2 {
                 font-family: 'IBM Plex Sans';
-                font-style: normal;
                 font-weight: 700;
-                font-size: 18px;
+                font-size: 25px;
                 line-height: 31px;
                 color: #222222;
+                padding-bottom: 20px;
+            }
+            .thank {
+                display: flex;
+                align-self: flex-end;
+                align-items: center;
+                h2 {
+                    text-align: center;
+                    font-family: 'Yellowtail';
+                    font-weight: 700;
+                    font-size: 35px;
+                    line-height: 45px;
+                    color: rgb(250, 72, 2);
+                    padding-bottom: 0;
+                }
+                .icon {
+                    width: 45px;
+                    height: 45px;
+                    color: rgb(250, 72, 2);
+                    margin-left: 3px;
+                }
             }
         }
     }
     .reviews {
-        background-color: #9a9c93;
+        background: radial-gradient(
+            circle at 50% -20.71%,
+            #fffff4 0,
+            #f6fff0 8.33%,
+            #ecffec 16.67%,
+            #e1ffe8 25%,
+            #d4fce4 33.33%,
+            #c5f7e1 41.67%,
+            #b5f2de 50%,
+            #a4eddd 58.33%,
+            #93e8dd 66.67%,
+            #83e3de 75%,
+            #74dee1 83.33%,
+            #65dae5 91.67%,
+            #59d6e9 100%
+        );
         width: auto;
         border-radius: 10px;
         padding: 10px 40px;
@@ -80,7 +134,7 @@
                 font-weight: 700;
                 font-size: 25px;
                 line-height: 32px;
-                background-color: #ff9600;
+                background-color: #f6bb68;
                 border-radius: 5px;
                 align-self: center;
                 margin-left: 30px;
@@ -110,11 +164,18 @@
                 .textAreaTextField::placeholder {
                     color: #222222;
                 }
+                textarea:focus {
+                    border-color: red;
+                }
+                .textAreaTextField {
+                    min-width: 220px;
+                }
             }
             .textAreaName {
                 text-align: left;
                 width: 220px;
                 background-color: #ffffff;
+                border-radius: 4px;
                 .textAreaNameField label {
                     color: #222222;
                 }

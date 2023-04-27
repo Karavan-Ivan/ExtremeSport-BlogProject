@@ -17,7 +17,15 @@
                 color: #09455a;
                 font-size: 34px;
                 line-height: 45px;
+                a {
+                    text-decoration: none;
+                    color: #09455a;
+                    &:hover {
+                        color: #ff9600;
+                    }
+                }
             }
+
             h3 {
                 padding: 0 10px;
                 font-size: 14px;
@@ -41,18 +49,7 @@
         .Block:hover {
             span {
                 display: block;
-                border: 5px solid #09455a;
-                border-top: none;
-            }
-            h3 {
-                border: 5px solid #09455a;
-                border-top: none;
-                border-bottom: none;
-            }
-            h2 {
-                border: 5px solid #09455a;
-                border-top: none;
-                border-bottom: none;
+                border-bottom: 5px solid black;
             }
         }
     }

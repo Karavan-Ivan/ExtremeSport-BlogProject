@@ -21,32 +21,50 @@ const Menu = (props: Props) => {
                     Activities
                     <div className="dropDownContent">
                         <li>
-                            <NavLink to="/MountainBiking" className={setActive}>
+                            <NavLink
+                                to="/Activities/MountainBiking"
+                                className={setActive}
+                            >
                                 Mountain Biking
                             </NavLink>
                         </li>
                         <li>
-                            <NavLink to="/SnowSports" className={setActive}>
+                            <NavLink
+                                to="/Activities/SnowSports"
+                                className={setActive}
+                            >
                                 Snow Sports
                             </NavLink>
                         </li>
                         <li>
-                            <NavLink to="/Surfing" className={setActive}>
+                            <NavLink
+                                to="/Activities/Surfing"
+                                className={setActive}
+                            >
                                 Surfing
                             </NavLink>
                         </li>
                         <li>
-                            <NavLink to="/Skateboarding" className={setActive}>
+                            <NavLink
+                                to="/Activities/Skateboarding"
+                                className={setActive}
+                            >
                                 Skateboarding
                             </NavLink>
                         </li>
                         <li>
-                            <NavLink to="/JetSkiing" className={setActive}>
+                            <NavLink
+                                to="/Activities/JetSkiing"
+                                className={setActive}
+                            >
                                 Jet Skiing
                             </NavLink>
                         </li>
                         <li>
-                            <NavLink to="/IceClimbing" className={setActive}>
+                            <NavLink
+                                to="/Activities/IceClimbing"
+                                className={setActive}
+                            >
                                 Ice Climbing
                             </NavLink>
                         </li>

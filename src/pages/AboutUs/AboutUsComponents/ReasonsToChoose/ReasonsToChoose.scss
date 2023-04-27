@@ -28,6 +28,8 @@
 }
 
 .ReasonsToChooseInfo {
+    display: flex;
+    align-items: center;
     .info {
         text-align: left;
     }
@@ -72,6 +74,7 @@
         border: 1px solid #eeeeee;
         border-radius: 10px;
         padding: 30px 45px;
+        height: 370px;
         h2 {
             padding-top: 35px;
             padding-bottom: 20px;

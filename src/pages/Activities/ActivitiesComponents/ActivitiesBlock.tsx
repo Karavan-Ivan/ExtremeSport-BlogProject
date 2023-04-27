@@ -2,6 +2,7 @@ import FavoriteIcon from '@mui/icons-material/Favorite'
 import { useAppDispatch, useAppSelector } from 'redux/hooks'
 import './ActivitiesPages.scss'
 import { toogleLike } from 'redux/likeReducer'
+import { Link } from 'react-router-dom'
 
 type Props = {
     id: number
@@ -26,7 +27,9 @@ const ActivitiesBlock = ({
     return (
         <>
             <img src={image} alt="" />
-            <h2>{title}</h2>
+            <h2>
+                <Link to={`/activity/${id}`}>{title}</Link>
+            </h2>
             <h3>{description}</h3>
             <span>{descriptionFull}</span>
             <button
