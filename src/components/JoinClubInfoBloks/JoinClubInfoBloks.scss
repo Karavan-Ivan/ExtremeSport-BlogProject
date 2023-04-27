@@ -14,7 +14,7 @@
                 font-size: 40px;
                 line-height: 48px;
                 text-transform: capitalize;
-                color: #ffffff;
+                color: #756969;
                 padding-bottom: 20px;
                 max-width: 60%;
             }
@@ -23,18 +23,22 @@
                 font-size: 28px;
                 line-height: 34px;
                 text-transform: capitalize;
-                color: #ffffff;
+                color: rgb(180, 190, 211);
                 font-family: 'IBM Plex Sans';
                 max-width: 50%;
             }
             h3 {
-                color: #ffffff;
+                color: #c6dbdb;
                 font-weight: 700;
                 font-size: 35px;
                 line-height: 40px;
                 max-width: 50%;
                 padding-bottom: 20px;
                 text-transform: capitalize;
+            }
+            h3:hover {
+                transform: scale(1.1);
+                color: #14b9f1;
             }
             hr {
                 border-top: 1px solid #545454;

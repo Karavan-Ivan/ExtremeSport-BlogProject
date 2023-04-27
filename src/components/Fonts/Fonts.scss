@@ -7,6 +7,7 @@ hr {
     width: 80px;
     border-top: 2px solid #a0a0a0;
     margin: 30px 0;
+    cursor: pointer;
 }
 
 h1 {
@@ -16,6 +17,7 @@ h1 {
     line-height: 65px;
     margin: 0;
     text-transform: capitalize;
+    cursor: pointer;
 }
 h2 {
     font-family: 'Yellowtail', cursive;
@@ -23,6 +25,7 @@ h2 {
     font-size: 30px;
     line-height: 24px;
     margin: 0;
+    cursor: pointer;
 }
 h3 {
     font-family: 'IBM Plex Sans', sans-serif;
@@ -30,11 +33,21 @@ h3 {
     font-size: 18px;
     line-height: 32px;
     margin: 0;
+    cursor: pointer;
+}
+@media (min-width: 1400px) {
+    h3 {
+        font-size: 22px;
+        line-height: 36px;
+    }
 }
 
 .activeNavLink {
     color: #ffffff;
     text-decoration: none;
+}
+.activeNavLink:hover {
+    color: #ff9600;
 }
 .activeNavH:hover {
     color: #14b9f1;

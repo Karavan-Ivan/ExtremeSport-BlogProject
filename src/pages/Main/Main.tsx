@@ -11,7 +11,7 @@ type Props = {}
 const Main = (props: Props) => {
     return (
         <>
-            <div className="firstContainer mainContainer">
+            <div className="firstContainer mainContainer container">
                 <JoinUs />
                 <Stats />
             </div>

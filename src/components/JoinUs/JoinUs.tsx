@@ -50,9 +50,13 @@ const JoinUs = (props: Props) => {
                 </Item>
             </Grid>
             <Grid item md={6} alignSelf="center">
-                <Item className="JoinUsImg">
-                    <img src={aboutExtremeSports1} alt="" />
-                    <img src={aboutExtremeSports2} alt="" />
+                <Item className="JoinUsImgBlock">
+                    <div className="JoinUsImgFirst">
+                        <img src={aboutExtremeSports1} alt="" />
+                    </div>
+                    <div className="JoinUsImgSecond">
+                        <img src={aboutExtremeSports2} alt="" />
+                    </div>
                 </Item>
             </Grid>
         </Grid>

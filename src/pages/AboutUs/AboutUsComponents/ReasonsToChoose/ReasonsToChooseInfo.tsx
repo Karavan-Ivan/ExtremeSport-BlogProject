@@ -11,7 +11,7 @@ type Props = {}
 
 const ReasonsToChooseInfo = (props: Props) => {
     return (
-        <>
+        <div className="mainContainer">
             <Grid container spacing={4} className="ReasonsToChooseInfo">
                 <Grid item md={5} xl={5} lg={5}>
                     <Item className="info">
@@ -97,7 +97,7 @@ const ReasonsToChooseInfo = (props: Props) => {
                     </Item>
                 </Grid>
             </Grid>
-        </>
+        </div>
     )
 }
 

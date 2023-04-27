@@ -24,4 +24,9 @@
         background-repeat: no-repeat;
         background-size: 100vw;
     }
+    @media (min-width: 1400px) {
+        .OrangeVector {
+            height: 230px;
+        }
+    }
 }

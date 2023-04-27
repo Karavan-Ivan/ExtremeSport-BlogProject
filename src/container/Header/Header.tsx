@@ -55,13 +55,13 @@ const Header = (props: Props) => {
     return (
         <>
             <Container
-                className="app-bar"
-                maxWidth="xl"
+                className="app-bar container"
                 sx={{
                     backgroundImage: `url(${changeBackgroundImage()})`,
                     backgroundRepeat: 'no-repeat',
                     backgroundSize: '100% 455px',
                 }}
+                maxWidth={false}
             >
                 <Logo />
                 <Menu />

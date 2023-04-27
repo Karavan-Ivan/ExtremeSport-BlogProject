@@ -3,18 +3,33 @@
         display: flex;
         gap: 30px;
     }
-
-    .JoinUsImg img:first-child {
-        width: 228px;
-        height: 500px;
-        align-self: flex-start;
-        border-radius: 10px;
-    }
-    .JoinUsImg img:last-child {
-        width: 228px;
-        height: 400px;
-        align-self: center;
-        border-radius: 10px;
+    .JoinUsImgBlock {
+        display: flex;
+        gap: 30px;
+        .JoinUsImgFirst {
+            width: 100%;
+            height: 500px;
+            align-self: flex-start;
+            border-radius: 10px;
+            img {
+                width: 100%;
+                height: 100%;
+                border-radius: 10px;
+                max-width: 480px;
+            }
+        }
+        .JoinUsImgSecond {
+            width: 100%;
+            height: 400px;
+            align-self: center;
+            border-radius: 10px;
+            img {
+                width: 100%;
+                height: 100%;
+                border-radius: 10px;
+                max-width: 380px;
+            }
+        }
     }
 
     .info {

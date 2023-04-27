@@ -8,6 +8,7 @@
     background-position: left, right;
     background-repeat: no-repeat, no-repeat;
     background-size: 50% 100%, 50%;
+    margin-top: 70px;
 
     .footerInfo {
         width: 50%;
@@ -31,6 +32,12 @@
                 align-self: center;
                 font-size: 15px;
                 line-height: 19px;
+            }
+            @media (min-width: 1025px) and (max-width: 1200px) {
+                .button {
+                    font-size: 13px;
+                    line-height: 16px;
+                }
             }
             .button:hover {
                 background-color: #14b9f1;

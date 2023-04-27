@@ -60,7 +60,6 @@ const App = (props: Props) => {
                 <Route path="/Contact" element={<Contact />} />
                 <Route path="activity/:id" element={<ActivityPage />} />
             </Routes>
-
             <Footer />
         </StyledEngineProvider>
     )
