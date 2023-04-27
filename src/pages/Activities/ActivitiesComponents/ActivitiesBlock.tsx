@@ -1,9 +1,7 @@
 import FavoriteIcon from '@mui/icons-material/Favorite'
 import { useAppDispatch, useAppSelector } from 'redux/hooks'
 import './ActivitiesPages.scss'
-import { Button } from 'react-bootstrap'
 import { toogleLike } from 'redux/likeReducer'
-import { doc } from 'prettier'
 
 type Props = {
     id: number
@@ -31,8 +29,7 @@ const ActivitiesBlock = ({
             <h2>{title}</h2>
             <h3>{description}</h3>
             <span>{descriptionFull}</span>
-            <Button
-                variant="outlined"
+            <button
                 className="buttonLike"
                 onClick={() => dispatch(toogleLike(id))}
             >
@@ -41,7 +38,7 @@ const ActivitiesBlock = ({
                 ) : (
                     <FavoriteIcon className="notLike" />
                 )}
-            </Button>
+            </button>
         </>
     )
 }

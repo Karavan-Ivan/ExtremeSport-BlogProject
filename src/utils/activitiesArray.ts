@@ -17,7 +17,7 @@ const activitiesArray: Activities[] = [
         image: '/images/SurreyHills.png',
         category: 'Mountain Biking',
         descriptionFull:
-            'People flock here at the weekends, meaning the car parks and trails can be very busy. And for good reason - dozens of hand-shaped sections of singletrack dart through the pretty forest, with soft, loamy dirt and short uphills making this one of the most fun days out on a bike near London. For those looking for a real test, the Northern Monkey line can`t be missed With so many riders frequenting the trails near Peaslake, this has become a real - if unofficial - hub for mountain biking. Make sure to be courteous to other trail users, take your rubbish home and spend a few pounds in a local pub or cafe to make sure mountain biking continues to be welcomed here.',
+            'People flock here at the weekends, meaning the car parks and trails can be very busy. And for good reason - dozens of hand-shaped sections of singletrack dart through the pretty forest, with soft, loamy dirt and short uphills making this one of the most fun days out on a bike near London. For those looking for a real test, the Northern Monkey line can`t be missed With so many riders frequenting the trails near Peaslake, this has become a real - if unofficial - hub for mountain biking.',
     },
     {
         id: 2,
@@ -139,5 +139,14 @@ const activitiesArray: Activities[] = [
             'It even has lights to let you climb at the night and there`s a big festival held there every year. The low-angle, big-featured area known as Land of the Lorax is ideal for newcomers, while The Stage Wall, the highest wall in park, has more than 20m of challenging vertical ice.',
     },
 ]
+
+export const getActivityObject = (array: Activities[]) =>
+    array.reduce(
+        (object, activity) => ({
+            ...object,
+            [activity.id]: activity,
+        }),
+        {}
+    )
 
 export default activitiesArray

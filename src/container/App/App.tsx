@@ -23,10 +23,9 @@ type Props = {}
 export const setActive = ({ isActive }: { isActive: any }) =>
     isActive ? 'activeMenuButton' : 'MenuButton'
 
-export const header = document.querySelector('app-bar')
-
 const App = (props: Props) => {
     const location = useLocation()
+
     return (
         <StyledEngineProvider injectFirst>
             <CssBaseline />
