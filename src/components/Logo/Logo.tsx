@@ -7,8 +7,8 @@ type Props = {}
 const Logo = (props: Props) => {
     return (
         <Typography variant="h6" component="div" sx={{ flexGrow: '1' }}>
-            <Link to="/">
-                <img src={logo} alt="" width="200px" height="50px" />
+            <Link to="/" className="logo">
+                <img src={logo} alt="" />
             </Link>
         </Typography>
     )

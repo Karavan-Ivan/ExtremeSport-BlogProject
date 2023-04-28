@@ -19,8 +19,8 @@ type Activities = {
 const SkateboardingPage = (props: Props) => {
     return (
         <div className="mainContainer activitiesPages">
-            <Grid container spacing={6}>
-                <Grid item md={6} xl={6} lg={6}>
+            <Grid container spacing={6} className="skateboardingBlocks">
+                <Grid item sm={6} md={6} xl={6} lg={6}>
                     <Item className="skateBoardingInfo">
                         <h2>Feel The Excitement</h2>
                         <h1>Amazing Sporting Adventures</h1>
@@ -50,7 +50,7 @@ const SkateboardingPage = (props: Props) => {
                         </ul>
                     </Item>
                 </Grid>
-                <Grid item md={6} xl={6} lg={6}>
+                <Grid item sm={6} md={6} xl={6} lg={6}>
                     <Item className="skateboardingPageImg pageImg"></Item>
                 </Grid>
             </Grid>
@@ -67,7 +67,7 @@ const SkateboardingPage = (props: Props) => {
                             category,
                             descriptionFull,
                         }: Activities) => (
-                            <Grid item md={4} lg={4} xl={4}>
+                            <Grid item sm={6} md={4} lg={4} xl={4}>
                                 <Item className="Block">
                                     <ActivitiesBlock
                                         id={id}

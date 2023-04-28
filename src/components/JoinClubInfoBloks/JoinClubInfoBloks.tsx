@@ -8,7 +8,7 @@ type Props = {}
 const JoinClubInfoBloks = (props: Props) => {
     return (
         <Grid container spacing={10} className="JoinClubInfoBloks">
-            <Grid item md={4} lg={4} xl={4} className="gridBlock">
+            <Grid item sm={4} md={4} lg={4} xl={4} className="gridBlock">
                 <Item className="block sportsVideos">
                     <h1>Sports videos</h1>
                     <h2>Get inspired</h2>
@@ -16,7 +16,7 @@ const JoinClubInfoBloks = (props: Props) => {
                     <h3>Watch</h3>
                 </Item>
             </Grid>
-            <Grid item md={4} lg={4} xl={4} className="gridBlock">
+            <Grid item sm={4} md={4} lg={4} xl={4} className="gridBlock">
                 <Link to="/Activities" className="activeNavLink">
                     <Item className="block clubActivities">
                         <h1>Club activities</h1>
@@ -26,7 +26,7 @@ const JoinClubInfoBloks = (props: Props) => {
                     </Item>
                 </Link>
             </Grid>
-            <Grid item md={4} lg={4} xl={4} className="gridBlock">
+            <Grid item sm={4} md={4} lg={4} xl={4} className="gridBlock">
                 <Link to="/AboutUs" className="activeNavLink">
                     <Item className="block team">
                         <h1>Meet our team</h1>

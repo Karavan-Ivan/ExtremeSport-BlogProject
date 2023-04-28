@@ -15,7 +15,7 @@ type Activities = {
     descriptionFull: string
 }
 
-const Activities = (props: Props) => {
+const ActivitiesPage = (props: Props) => {
     return (
         <div className="Activities mainContainer">
             <h1 className="allActivitiesH1">All Activities</h1>
@@ -30,7 +30,7 @@ const Activities = (props: Props) => {
                         category,
                         descriptionFull,
                     }: Activities) => (
-                        <Grid item md={4} lg={4} xl={4}>
+                        <Grid item sm={6} md={4} lg={4} xl={4}>
                             <Item className="Block">
                                 <ActivitiesBlock
                                     id={id}
@@ -49,4 +49,4 @@ const Activities = (props: Props) => {
     )
 }
 
-export default Activities
+export default ActivitiesPage

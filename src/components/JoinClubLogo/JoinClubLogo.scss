@@ -29,4 +29,13 @@
             height: 230px;
         }
     }
+    @media (min-width: 769px) and (max-width: 1024px) {
+        h1 {
+            font-size: 100px;
+            line-height: 208px;
+        }
+        .OrangeVector {
+            bottom: -56px;
+        }
+    }
 }

@@ -66,3 +66,21 @@
         }
     }
 }
+@media (min-width: 769px) and (max-width: 1024px) {
+    .footer {
+        background: url(./img/footerImg.png), #0c3543;
+        background-position: left, right;
+        background-repeat: no-repeat, no-repeat;
+        background-size: 35% 100%, 65%;
+        padding-right: 100px;
+        .footerInfo {
+            padding: 50px 0;
+            .JoinUs {
+                .button {
+                    font-size: 14px;
+                    line-height: 14px;
+                }
+            }
+        }
+    }
+}

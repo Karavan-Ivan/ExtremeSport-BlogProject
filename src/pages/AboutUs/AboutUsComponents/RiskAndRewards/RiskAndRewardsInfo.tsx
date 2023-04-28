@@ -9,7 +9,7 @@ const RiskAndRewardsInfo = (props: Props) => {
     return (
         <>
             <Grid container spacing={8} className="RiskAndRewardsInfo">
-                <Grid item md={6} lg={6} xl={6}>
+                <Grid item sm={6} md={6} lg={6} xl={6}>
                     <Item>
                         <h2>Challenge Yourself And Push The Limits</h2>
                         <h3>
@@ -21,7 +21,7 @@ const RiskAndRewardsInfo = (props: Props) => {
                         <img src={extremeBiking} alt="" />
                     </Item>
                 </Grid>
-                <Grid item md={6} lg={6} xl={6}>
+                <Grid item sm={6} md={6} lg={6} xl={6}>
                     <Item>
                         <img src={snowboardMan} alt="" />
                         <h2>A Never Ending “Adventurous Journey”</h2>

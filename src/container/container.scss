@@ -18,6 +18,20 @@
     gap: 100px;
     margin-bottom: 100px;
 }
+@media (min-width: 769px) and (max-width: 1024px) {
+    .firstContainer {
+        gap: 50px;
+        margin-bottom: 60px;
+    }
+    .mainContainer {
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-bottom: 60px;
+    }
+    .JoinClubInfoContainer {
+        margin-bottom: 60px;
+    }
+}
 .middleContainer {
     gap: 30px;
     background-color: #0c3543;

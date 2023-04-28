@@ -4,7 +4,106 @@
     height: 455px;
     padding: 38px 45px 0 45px;
     margin-bottom: 50px;
+    .logo img {
+        width: 200px;
+        height: 50px;
+    }
 }
+@media (min-width: 769px) and (max-width: 1024px) {
+    .app-bar {
+        display: flex;
+        align-items: flex-start;
+        height: 350px;
+        padding: 38px 45px 0 45px;
+        margin-bottom: 50px;
+        .logo img {
+            width: 150px;
+            height: 35px;
+        }
+    }
+    .menu {
+        button {
+            color: #ffffff;
+            font-weight: bold;
+            font-size: 10px;
+            line-height: 16px;
+            background: none;
+            margin: 0 10px;
+            width: 60px;
+        }
+        button:hover {
+            color: #ff9600;
+        }
+
+        .activeMenuButton {
+            color: #ff9600;
+            text-decoration: none;
+            width: 100%;
+            height: 100%;
+            display: inline-block;
+        }
+        .MenuButton {
+            color: #ffffff;
+            text-decoration: none;
+            width: 100%;
+            height: 100%;
+            display: inline-block;
+        }
+        .MenuButton:hover {
+            color: #ff9600;
+        }
+
+        .dropDownBtn {
+            position: relative;
+        }
+        .dropDownContent {
+            position: absolute;
+            display: none;
+            padding: 0;
+            margin: 3px 0 0;
+            left: 15px;
+            width: auto;
+            z-index: 1;
+
+            li {
+                color: #ffffff;
+                font-weight: bold;
+                font-size: 10px;
+                line-height: 16px;
+                text-decoration: none;
+                list-style: none;
+                background-color: #0c3543;
+                padding: 1px 6px;
+                border-width: 2px;
+                border-style: outset;
+                border-color: buttonborder;
+                border-image: initial;
+                width: 100px;
+                text-align: left;
+            }
+        }
+        .dropDownBtn:hover .dropDownContent {
+            display: block;
+        }
+        .dropDownContent li:hover {
+            color: #ff9600;
+        }
+    }
+    .whiteVector {
+        background-image: url(./img/whiteVector.svg);
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 210px;
+        max-width: 1540px;
+        background-size: 100%;
+        position: absolute;
+        top: 220px;
+        right: 0;
+        left: 0;
+        margin: auto;
+    }
+}
+
 @media (min-width: 1025px) {
     .menu {
         button {

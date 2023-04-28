@@ -13,7 +13,7 @@ const ReasonsToChooseInfo = (props: Props) => {
     return (
         <div className="mainContainer">
             <Grid container spacing={4} className="ReasonsToChooseInfo">
-                <Grid item md={5} xl={5} lg={5}>
+                <Grid item sm={12} md={5} xl={5} lg={5}>
                     <Item className="info">
                         <h2>Live The Excitement</h2>
                         <h1>Reasons To Choose Extreme Sports</h1>
@@ -48,10 +48,10 @@ const ReasonsToChooseInfo = (props: Props) => {
                         </button>
                     </Item>
                 </Grid>
-                <Grid item md={7} xl={7} lg={7}>
+                <Grid item sm={12} md={7} xl={7} lg={7}>
                     <Item>
                         <Grid container spacing={2}>
-                            <Grid item md={6} xl={6} lg={6}>
+                            <Grid item sm={6} md={6} xl={6} lg={6}>
                                 <Item className="ReasonToChooseBlock">
                                     <div className="imageBlock AboutTeam">
                                         <SnowboardingIcon className="Icon" />
@@ -60,7 +60,7 @@ const ReasonsToChooseInfo = (props: Props) => {
                                     <h3>Dolor sit amet mag</h3>
                                 </Item>
                             </Grid>
-                            <Grid item md={6} xl={6} lg={6}>
+                            <Grid item sm={6} md={6} xl={6} lg={6}>
                                 <Item className="ReasonToChooseBlock">
                                     <div className="imageBlock AboutTrain">
                                         <AccessibilityNewIcon className="Icon" />
@@ -69,7 +69,7 @@ const ReasonsToChooseInfo = (props: Props) => {
                                     <h3>Dolor sit amet mag</h3>
                                 </Item>
                             </Grid>
-                            <Grid item md={6} xl={6} lg={6}>
+                            <Grid item sm={6} md={6} xl={6} lg={6}>
                                 <Item className="ReasonToChooseBlock">
                                     <div className="imageBlock AboutSkills">
                                         <SportsMartialArtsIcon className="Icon" />
@@ -81,7 +81,7 @@ const ReasonsToChooseInfo = (props: Props) => {
                                     <h3>Dolor sit amet mag</h3>
                                 </Item>
                             </Grid>
-                            <Grid item md={6} xl={6} lg={6}>
+                            <Grid item sm={6} md={6} xl={6} lg={6}>
                                 <Item className="ReasonToChooseBlock">
                                     <div className="imageBlock AboutGlobe">
                                         <HikingIcon className="Icon" />

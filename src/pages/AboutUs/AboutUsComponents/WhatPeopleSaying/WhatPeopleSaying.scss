@@ -106,6 +106,14 @@
         }
     }
 
+    @media (min-width: 769px) and (max-width: 1024px) {
+        .WhatPeopleSayingSwiper {
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+    }
+
     @media (min-width: 1025px) and (max-width: 1200px) {
         .WhatPeopleSayingSwiper {
             height: 420px;

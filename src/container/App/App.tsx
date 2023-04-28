@@ -6,7 +6,7 @@ import { StyledEngineProvider } from '@mui/material/styles'
 import 'components/Fonts/Fonts.scss'
 import 'components/Button/Button.scss'
 import 'components/UlIcons/UlIcons.scss'
-import { Route, Routes, useLocation } from 'react-router-dom'
+import { Route, Routes } from 'react-router-dom'
 import AboutUs from 'pages/AboutUs/AboutUs'
 import Activities from 'pages/Activities/Activities'
 import SnowSportsPage from 'pages/Activities/ActivitiesPages/SnowSportsPage'
@@ -25,8 +25,6 @@ export const setActive = ({ isActive }: { isActive: any }) =>
     isActive ? 'activeMenuButton' : 'MenuButton'
 
 const App = (props: Props) => {
-    const location = useLocation()
-
     return (
         <StyledEngineProvider injectFirst>
             <CssBaseline />

@@ -16,7 +16,7 @@ const JoinUs = (props: Props) => {
             sx={{ marginTop: '50px' }}
             className="JoinUs"
         >
-            <Grid item md={6} sx={{ padding: '0' }}>
+            <Grid item sm={6} md={6} lg={6} xl={6} sx={{ padding: '0' }}>
                 <Item className="info">
                     <h2>Feel The Excitement</h2>
                     <h1>Join Us and Embark on New Adventures</h1>
@@ -49,7 +49,7 @@ const JoinUs = (props: Props) => {
                     </button>
                 </Item>
             </Grid>
-            <Grid item md={6} alignSelf="center">
+            <Grid item xs={12} sm={6} md={6} lg={6} xl={6} alignSelf="center">
                 <Item className="JoinUsImgBlock">
                     <div className="JoinUsImgFirst">
                         <img src={aboutExtremeSports1} alt="" />

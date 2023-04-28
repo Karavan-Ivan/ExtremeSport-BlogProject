@@ -19,8 +19,8 @@ type Activities = {
 const SnowSportsPage = (props: Props) => {
     return (
         <div className="mainContainer activitiesPages">
-            <Grid container spacing={6}>
-                <Grid item md={6} xl={6} lg={6}>
+            <Grid container spacing={6} className="snowSportsBlocks">
+                <Grid item sm={6} md={6} xl={6} lg={6}>
                     <Item className="activitiesPageInfo">
                         <img src={logoOrange} alt="" />
                         <h1>
@@ -40,7 +40,7 @@ const SnowSportsPage = (props: Props) => {
                         </h3>
                     </Item>
                 </Grid>
-                <Grid item md={6} xl={6} lg={6}>
+                <Grid item sm={6} md={6} xl={6} lg={6}>
                     <Item className="snowSportPageImg pageImg"></Item>
                 </Grid>
             </Grid>
@@ -57,7 +57,7 @@ const SnowSportsPage = (props: Props) => {
                             category,
                             descriptionFull,
                         }: Activities) => (
-                            <Grid item md={4} lg={4} xl={4}>
+                            <Grid item sm={6} md={4} lg={4} xl={4}>
                                 <Item className="Block">
                                     <ActivitiesBlock
                                         id={id}

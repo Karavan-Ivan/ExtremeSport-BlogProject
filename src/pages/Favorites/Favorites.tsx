@@ -32,7 +32,7 @@ const Favorites = ({
             <hr className="favoritesHr" />
             <Grid container spacing={6} className="Blocks">
                 {Object.keys(filteredObject).map((id) => (
-                    <Grid item md={4} lg={4} xl={4}>
+                    <Grid item sm={6} md={4} lg={4} xl={4}>
                         <Item className="Block">
                             <img
                                 src={activitiesObject[parseInt(id)].image}

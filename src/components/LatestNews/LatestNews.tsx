@@ -15,10 +15,10 @@ const LatestNews = (props: Props) => {
                 borderRadius: '10px',
             }}
         >
-            <Grid item md={3}>
+            <Grid item sm={12} md={3}>
                 <LatestNewsArticle />
             </Grid>
-            <Grid item md={9}>
+            <Grid item sm={12} md={9}>
                 <LatestNewsSlider />
             </Grid>
         </Grid>
