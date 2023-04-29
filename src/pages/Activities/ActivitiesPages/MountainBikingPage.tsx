@@ -22,7 +22,7 @@ const MountainBikingPage = (props: Props) => {
     return (
         <div className="mainContainer activitiesPages">
             <Grid container spacing={6} className="mountainBikingBloks">
-                <Grid item sm={6} md={6} xl={6} lg={6}>
+                <Grid item xs={12} sm={6} md={6} xl={6} lg={6}>
                     <Item className="activitiesPageInfo">
                         <img src={logoOrange} alt="" />
                         <h1>Discover The World Of Adventure Mountain Biking</h1>
@@ -58,7 +58,7 @@ const MountainBikingPage = (props: Props) => {
                         </div>
                     </Item>
                 </Grid>
-                <Grid item sm={6} md={6} xl={6} lg={6}>
+                <Grid item xs={12} sm={6} md={6} xl={6} lg={6}>
                     <Item className="mountainBikingPageImg"></Item>
                 </Grid>
             </Grid>
@@ -75,7 +75,7 @@ const MountainBikingPage = (props: Props) => {
                             category,
                             descriptionFull,
                         }: Activities) => (
-                            <Grid item sm={6} md={4} lg={4} xl={4}>
+                            <Grid xs={12} item sm={6} md={4} lg={4} xl={4}>
                                 <Item className="Block">
                                     <ActivitiesBlock
                                         id={id}

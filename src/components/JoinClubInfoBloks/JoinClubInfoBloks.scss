@@ -46,6 +46,7 @@
                 height: 1px;
                 margin: 30px 0;
             }
+
             @media (min-width: 769px) and (max-width: 1024px) {
                 h1 {
                     font-size: 30px;
@@ -54,6 +55,21 @@
                 h2 {
                     font-size: 24px;
                     line-height: 30px;
+                }
+            }
+        }
+
+        @media (min-width: 481px) and (max-width: 768px) {
+            .block {
+                align-items: flex-start;
+                padding-left: 30px;
+                height: 320px;
+                h1 {
+                    text-align: left;
+                    max-width: none;
+                }
+                hr {
+                    margin: 15px 0;
                 }
             }
         }

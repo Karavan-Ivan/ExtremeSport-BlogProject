@@ -16,7 +16,15 @@ const JoinUs = (props: Props) => {
             sx={{ marginTop: '50px' }}
             className="JoinUs"
         >
-            <Grid item sm={6} md={6} lg={6} xl={6} sx={{ padding: '0' }}>
+            <Grid
+                item
+                xs={12}
+                sm={6}
+                md={6}
+                lg={6}
+                xl={6}
+                sx={{ padding: '0' }}
+            >
                 <Item className="info">
                     <h2>Feel The Excitement</h2>
                     <h1>Join Us and Embark on New Adventures</h1>

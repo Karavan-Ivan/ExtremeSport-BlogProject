@@ -16,7 +16,7 @@ const Contact = (props: Props) => {
                 Team
             </h1>
             <Grid container spacing={2}>
-                <Grid item sm={6} md={3} lg={3} xl={3}>
+                <Grid item xs={12} sm={6} md={3} lg={3} xl={3}>
                     <Item className="block">
                         <div className="iconBlock place">
                             <PlaceIcon className="icon" />
@@ -28,7 +28,7 @@ const Contact = (props: Props) => {
                         </h3>
                     </Item>
                 </Grid>
-                <Grid item sm={6} md={3} lg={3} xl={3}>
+                <Grid item sm={6} xs={12} md={3} lg={3} xl={3}>
                     <Item className="block">
                         <div className="iconBlock call">
                             <CallIcon className="icon" />
@@ -39,7 +39,7 @@ const Contact = (props: Props) => {
                         </h3>
                     </Item>
                 </Grid>
-                <Grid item sm={6} md={3} lg={3} xl={3}>
+                <Grid item xs={12} sm={6} md={3} lg={3} xl={3}>
                     <Item className="block">
                         <div className="iconBlock email">
                             <EmailIcon className="icon" />
@@ -51,7 +51,7 @@ const Contact = (props: Props) => {
                         </h3>
                     </Item>
                 </Grid>
-                <Grid item sm={6} md={3} lg={3} xl={3}>
+                <Grid item xs={12} sm={6} md={3} lg={3} xl={3}>
                     <Item className="block">
                         <div className="iconBlock accessTime">
                             <AccessTimeFilledIcon className="icon" />

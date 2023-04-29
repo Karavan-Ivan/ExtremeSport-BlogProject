@@ -25,7 +25,7 @@ const SurfingPage = (props: Props) => {
             </h1>
 
             <Grid container spacing={6}>
-                <Grid item sm={12} md={6} xl={6} lg={6}>
+                <Grid item xs={12} sm={12} md={6} xl={6} lg={6}>
                     <Item className="surfingPageBlock">
                         <img src={surfingPageImg1} alt="" />
                         <h2>Challenge Yourself And Push The Limits</h2>
@@ -37,7 +37,7 @@ const SurfingPage = (props: Props) => {
                         </h3>
                     </Item>
                 </Grid>
-                <Grid item sm={12} md={6} xl={6} lg={6}>
+                <Grid item xs={12} sm={12} md={6} xl={6} lg={6}>
                     <Item className="surfingPageBlock">
                         <img src={surfingPageImg2} alt="" />
                         <h2>Experience Ultimate Satisfaction In The Water</h2>
@@ -63,7 +63,7 @@ const SurfingPage = (props: Props) => {
                             category,
                             descriptionFull,
                         }: Activities) => (
-                            <Grid item sm={6} md={4} lg={4} xl={4}>
+                            <Grid item xs={12} sm={6} md={4} lg={4} xl={4}>
                                 <Item className="Block">
                                     <ActivitiesBlock
                                         id={id}

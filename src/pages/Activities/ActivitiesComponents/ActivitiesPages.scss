@@ -236,6 +236,18 @@
         width: 100%;
     }
 
+    @media (min-width: 481px) and (max-width: 768px) {
+        .mountainBikingPageImg,
+        .snowSportPageImg,
+        .skateboardingPageImg {
+            display: none;
+        }
+        .iceClimbingPageImg1,
+        .iceClimbingPageImg1 {
+            height: 380px;
+        }
+    }
+
     @media (min-width: 769px) and (max-width: 1024px) {
         .mountainBikingPageTasks {
             h2 {

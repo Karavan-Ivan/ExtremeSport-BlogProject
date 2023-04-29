@@ -20,7 +20,7 @@ const JetSkiingPage = (props: Props) => {
     return (
         <div className="mainContainer activitiesPages">
             <Grid container spacing={6} className="jetSkiingBloks">
-                <Grid item sm={6} md={6} xl={6} lg={6}>
+                <Grid item xs={12} sm={6} md={6} xl={6} lg={6}>
                     <Item className="jetSkiingInfo">
                         <h2>Feel The Excitement</h2>
                         <h1>Join Us and Embark on New Adventures</h1>
@@ -50,7 +50,7 @@ const JetSkiingPage = (props: Props) => {
                         </ul>
                     </Item>
                 </Grid>
-                <Grid item sm={6} md={6} xl={6} lg={6}>
+                <Grid item xs={12} sm={6} md={6} xl={6} lg={6}>
                     <Item className="jetSkiingPageImg pageImg"></Item>
                 </Grid>
             </Grid>
@@ -67,7 +67,7 @@ const JetSkiingPage = (props: Props) => {
                             category,
                             descriptionFull,
                         }: Activities) => (
-                            <Grid item sm={6} md={4} lg={4} xl={4}>
+                            <Grid item xs={12} sm={6} md={4} lg={4} xl={4}>
                                 <Item className="Block">
                                     <ActivitiesBlock
                                         id={id}

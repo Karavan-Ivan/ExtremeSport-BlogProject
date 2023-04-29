@@ -20,6 +20,9 @@
             width: 150px;
             height: 35px;
         }
+        .menuIcon {
+            display: none;
+        }
     }
     .menu {
         button {
@@ -105,6 +108,9 @@
 }
 
 @media (min-width: 1025px) {
+    .menuIcon {
+        display: none;
+    }
     .menu {
         button {
             color: #ffffff;
@@ -185,6 +191,19 @@
         right: 0;
         left: 0;
         margin: auto;
+    }
+}
+@media (max-width: 768px) {
+    .menuIcon {
+        color: white;
+        width: 45px;
+        height: 45px;
+    }
+    .menuShow {
+        display: block;
+    }
+    .menuHide {
+        display: none;
     }
 }
 

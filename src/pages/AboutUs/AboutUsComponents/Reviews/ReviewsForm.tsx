@@ -9,6 +9,7 @@ type Review = {
     name: string
     text: string
     image: string
+    value: number | null
 }
 
 const ReviewsForm = (props: Props) => {
@@ -19,6 +20,7 @@ const ReviewsForm = (props: Props) => {
         name: '',
         text: '',
         image: '/images/UnknownUser.png',
+        value: 0,
     })
 
     const handleName = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -34,6 +36,13 @@ const ReviewsForm = (props: Props) => {
         }))
     }
 
+    const handleRating = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
+        setNewReview((prevState) => ({
+            ...prevState,
+            value: parseInt(e.target.value),
+        }))
+    }
+
     const sendReview = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault()
 
@@ -43,6 +52,7 @@ const ReviewsForm = (props: Props) => {
             name: '',
             text: '',
             image: '/images/UnknownUser.png',
+            value: 0,
         })
     }
 
@@ -67,6 +77,7 @@ const ReviewsForm = (props: Props) => {
                             <TextareaAutosize
                                 className="textAreaTextField"
                                 minRows={5}
+                                maxLength={50}
                                 maxRows={10}
                                 placeholder="Your message"
                                 value={newReview.text}
@@ -75,7 +86,6 @@ const ReviewsForm = (props: Props) => {
                             />
                         </div>
                     </div>
-
                     <button type="submit">Send</button>
                 </div>
             </form>
@@ -84,3 +94,19 @@ const ReviewsForm = (props: Props) => {
 }
 
 export default ReviewsForm
+
+{
+    /* <Box
+                            sx={{
+                                '& > legend': { mt: 2 },
+                            }}
+                        >
+                            <Typography component="legend">
+                                <Rating
+                                    name="simple-controlled"
+                                    value={newReview.value}
+                                    onChange={handleRating}
+                                />
+                            </Typography>
+                        </Box> */
+}

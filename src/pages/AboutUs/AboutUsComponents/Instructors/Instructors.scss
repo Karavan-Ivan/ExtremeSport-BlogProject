@@ -54,3 +54,16 @@
         border-radius: 10px;
     }
 }
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    h2 {
+        font-size: 26px;
+        padding-bottom: 5px;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    .Instructors {
+        padding: 50px;
+    }
+}

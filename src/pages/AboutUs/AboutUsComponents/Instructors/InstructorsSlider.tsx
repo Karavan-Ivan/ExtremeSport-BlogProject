@@ -14,7 +14,7 @@ export default function App() {
     return (
         <>
             <Swiper
-                slidesPerView={3}
+                slidesPerView={1}
                 spaceBetween={30}
                 freeMode={true}
                 pagination={{
@@ -22,6 +22,10 @@ export default function App() {
                 }}
                 modules={[FreeMode, Pagination]}
                 className="mySwiper"
+                breakpoints={{
+                    769: { slidesPerView: 3 },
+                    600: { slidesPerView: 2 },
+                }}
             >
                 <SwiperSlide>
                     <img src={MarkThomas} alt="" />

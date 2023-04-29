@@ -1,0 +1,12 @@
+.latestNews {
+    margin-top: 100px;
+    border: 30px solid #0c3543;
+    border-radius: 10px;
+    margin-left: 0;
+    width: 100%;
+}
+@media (min-width: 481px) and (max-width: 768px) {
+    .latestNews {
+        border: 10px solid #0c3543;
+    }
+}

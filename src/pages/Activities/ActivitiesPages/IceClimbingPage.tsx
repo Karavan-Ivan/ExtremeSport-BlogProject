@@ -20,7 +20,7 @@ const IceClimbingPage = (props: Props) => {
     return (
         <div className="mainContainer activitiesPages">
             <Grid container spacing={2} className="iceClimbingBloks">
-                <Grid item sm={6} md={6} xl={6} lg={6}>
+                <Grid item xs={12} sm={6} md={6} xl={6} lg={6}>
                     <Item className="activitiesPageInfo">
                         <img src={logoOrange} alt="" />
                         <h1>
@@ -40,15 +40,15 @@ const IceClimbingPage = (props: Props) => {
                         </h3>
                     </Item>
                 </Grid>
-                <Grid item sm={6} md={6} xl={6} lg={6}>
+                <Grid item xs={12} sm={6} md={6} xl={6} lg={6}>
                     <Item className="pageImg iceClimbingPageImg1"></Item>
                 </Grid>
             </Grid>
             <Grid container spacing={6} className="iceClimbingBloks">
-                <Grid sm={6} item md={6} xl={6} lg={6}>
+                <Grid xs={12} sm={6} item md={6} xl={6} lg={6}>
                     <Item className="pageImg iceClimbingPageImg2"></Item>
                 </Grid>
-                <Grid sm={6} item md={6} xl={6} lg={6}>
+                <Grid xs={12} sm={6} item md={6} xl={6} lg={6}>
                     <Item className="activitiesPageInfo">
                         <img src={logoOrange} alt="" />
                         <h1>
@@ -82,7 +82,7 @@ const IceClimbingPage = (props: Props) => {
                             category,
                             descriptionFull,
                         }: Activities) => (
-                            <Grid item sm={6} md={4} lg={4} xl={4}>
+                            <Grid item xs={12} sm={6} md={4} lg={4} xl={4}>
                                 <Item className="Block">
                                     <ActivitiesBlock
                                         id={id}

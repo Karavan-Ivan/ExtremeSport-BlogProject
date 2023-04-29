@@ -72,6 +72,28 @@
         }
     }
 
+    @media (min-width: 481px) and (max-width: 768px) {
+        .Item {
+            padding: 15px;
+            height: 220px;
+        }
+        .Icon {
+            display: none;
+        }
+        h3 {
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 32px;
+            text-align: center;
+            margin: 0;
+        }
+        h1 {
+            font-size: 60px;
+            line-height: 60px;
+            padding: 0 0 5px;
+        }
+    }
+
     @media (min-width: 769px) and (max-width: 1024px) {
         .Item {
             padding: 15px;

@@ -9,6 +9,7 @@ type Review = {
     name: string
     text: string
     image: string
+    value: number | null
 }
 
 export default function App() {
@@ -22,7 +23,7 @@ export default function App() {
                 modules={[EffectCards]}
                 className="mySwiper"
             >
-                {arrReviews.map(({ name, text, image }, i) => (
+                {arrReviews.map(({ name, text, image, value }, i) => (
                     <SwiperSlide>
                         <div className="SlideInfo">
                             <img src={image} alt="" />

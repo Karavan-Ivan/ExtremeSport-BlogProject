@@ -24,11 +24,24 @@
         background-repeat: no-repeat;
         background-size: 100vw;
     }
+
     @media (min-width: 1400px) {
         .OrangeVector {
             height: 230px;
         }
     }
+
+    @media (min-width: 481px) and (max-width: 768px) {
+        h1 {
+            font-size: 70px;
+            line-height: 100px;
+            margin-top: 50px;
+        }
+        .OrangeVector {
+            bottom: -102px;
+        }
+    }
+
     @media (min-width: 769px) and (max-width: 1024px) {
         h1 {
             font-size: 100px;

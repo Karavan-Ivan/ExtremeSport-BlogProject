@@ -153,3 +153,13 @@
         }
     }
 }
+
+@media (min-width: 481px) and (max-width: 768px) {
+    .ReasonsToChooseLogo {
+        margin: 50px 0;
+        height: 400px;
+        h2 {
+            font-size: 44px;
+        }
+    }
+}

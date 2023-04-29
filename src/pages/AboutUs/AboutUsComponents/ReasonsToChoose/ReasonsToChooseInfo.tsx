@@ -51,7 +51,7 @@ const ReasonsToChooseInfo = (props: Props) => {
                 <Grid item sm={12} md={7} xl={7} lg={7}>
                     <Item>
                         <Grid container spacing={2}>
-                            <Grid item sm={6} md={6} xl={6} lg={6}>
+                            <Grid item xs={12} sm={6} md={6} xl={6} lg={6}>
                                 <Item className="ReasonToChooseBlock">
                                     <div className="imageBlock AboutTeam">
                                         <SnowboardingIcon className="Icon" />
@@ -60,7 +60,7 @@ const ReasonsToChooseInfo = (props: Props) => {
                                     <h3>Dolor sit amet mag</h3>
                                 </Item>
                             </Grid>
-                            <Grid item sm={6} md={6} xl={6} lg={6}>
+                            <Grid item xs={12} sm={6} md={6} xl={6} lg={6}>
                                 <Item className="ReasonToChooseBlock">
                                     <div className="imageBlock AboutTrain">
                                         <AccessibilityNewIcon className="Icon" />
@@ -69,7 +69,7 @@ const ReasonsToChooseInfo = (props: Props) => {
                                     <h3>Dolor sit amet mag</h3>
                                 </Item>
                             </Grid>
-                            <Grid item sm={6} md={6} xl={6} lg={6}>
+                            <Grid item xs={12} sm={6} md={6} xl={6} lg={6}>
                                 <Item className="ReasonToChooseBlock">
                                     <div className="imageBlock AboutSkills">
                                         <SportsMartialArtsIcon className="Icon" />
@@ -81,7 +81,7 @@ const ReasonsToChooseInfo = (props: Props) => {
                                     <h3>Dolor sit amet mag</h3>
                                 </Item>
                             </Grid>
-                            <Grid item sm={6} md={6} xl={6} lg={6}>
+                            <Grid item xs={12} sm={6} md={6} xl={6} lg={6}>
                                 <Item className="ReasonToChooseBlock">
                                     <div className="imageBlock AboutGlobe">
                                         <HikingIcon className="Icon" />

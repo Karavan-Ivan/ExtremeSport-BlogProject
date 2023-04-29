@@ -14,6 +14,7 @@ import headerMountainBikingBackgroungImg from './img/headerMountainBikingBackgro
 import headerSkateboardingBackgroungImg from './img/headerSkateboardingBackgroungImg.png'
 import headerSnowSportBackgroungImg from './img/headerSnowSportBackgroungImg.png'
 import headerSurfingBackgroungImg from './img/headerSurfingBackgroungImg.png'
+import MenuMain from 'components/Menu/Menu'
 
 type Props = {}
 
@@ -64,7 +65,7 @@ const Header = (props: Props) => {
                 maxWidth={false}
             >
                 <Logo />
-                <Menu />
+                <MenuMain />
                 <div className="whiteVector"></div>
             </Container>
         </>

@@ -11,7 +11,7 @@ type Props = {}
 const WhyChooseUsBlocks = (props: Props) => {
     return (
         <Grid container spacing={5} className="WhyChooseUsBlocks">
-            <Grid item md={3} lg={3} xl={3} sm={6}>
+            <Grid item xs={12} md={3} lg={3} xl={3} sm={6}>
                 <Item className="WhyChooseUsBlock">
                     <div className="imageBlock AboutTeam">
                         <SnowboardingIcon className="Icon" />
@@ -23,7 +23,7 @@ const WhyChooseUsBlocks = (props: Props) => {
                     </h3>
                 </Item>
             </Grid>
-            <Grid item md={3} lg={3} xl={3} sm={6}>
+            <Grid item xs={12} md={3} lg={3} xl={3} sm={6}>
                 <Item className="WhyChooseUsBlock">
                     <div className="imageBlock AboutTrain">
                         <AccessibilityNewIcon className="Icon" />
@@ -35,7 +35,7 @@ const WhyChooseUsBlocks = (props: Props) => {
                     </h3>
                 </Item>
             </Grid>
-            <Grid item md={3} lg={3} xl={3} sm={6}>
+            <Grid item xs={12} md={3} lg={3} xl={3} sm={6}>
                 <Item className="WhyChooseUsBlock">
                     <div className="imageBlock AboutSkills">
                         <SportsMartialArtsIcon className="Icon" />
@@ -47,7 +47,7 @@ const WhyChooseUsBlocks = (props: Props) => {
                     </h3>
                 </Item>
             </Grid>
-            <Grid item md={3} lg={3} xl={3} sm={6}>
+            <Grid item xs={12} md={3} lg={3} xl={3} sm={6}>
                 <Item className="WhyChooseUsBlock">
                     <div className="imageBlock AboutGlobe">
                         <HikingIcon className="Icon" />

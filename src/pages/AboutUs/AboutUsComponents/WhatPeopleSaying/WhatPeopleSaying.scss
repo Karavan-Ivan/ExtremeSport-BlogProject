@@ -21,6 +21,7 @@
         height: 420px;
         width: 400px;
         padding: 0 20px;
+        margin-left: 50px;
         margin-left: 40px;
         .swiper {
             width: 100%;
@@ -101,6 +102,25 @@
                     height: 45px;
                     color: rgb(250, 72, 2);
                     margin-left: 3px;
+                }
+            }
+        }
+    }
+
+    @media (min-width: 481px) and (max-width: 768px) {
+        .WhatPeopleSayingSwiper {
+            left: 0;
+            right: 0;
+            margin: auto;
+            height: 420px;
+            width: 380px;
+            margin: 10px 0 0;
+            .SlideInfo {
+                .thank {
+                    display: none;
+                }
+                h2 {
+                    padding-bottom: 0;
                 }
             }
         }

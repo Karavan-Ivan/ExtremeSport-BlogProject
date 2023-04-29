@@ -4,6 +4,7 @@ type Review = {
     name: string
     text: string
     image: string
+    value: number | null
 }
 
 const initialState: Review[] = [
@@ -11,16 +12,19 @@ const initialState: Review[] = [
         name: 'Jonson Trimph',
         text: 'Praesent posuere, risus nec aliquet lorem diam tempor est vitae finibus tortor erat sit amet dolor. Sed ipsumus neque congue biats con quatasy venenatis augue.',
         image: '/images/JonsonTrimphComment.jpg',
+        value: 5,
     },
     {
         name: 'Sierray Williams',
         text: 'Praesent posuere, risus nec aliquet lorem diam tempor est vitae finibus tortor erat sit amet dolor. Sed ipsumus neque congue biats con quatasy venenatis augue.',
         image: '/images/SierrayWilliamsComment.jpg',
+        value: 5,
     },
     {
         name: 'Alex Haysman',
         text: 'Praesent posuere, risus nec aliquet lorem diam tempor est vitae finibus tortor erat sit amet dolor. Sed ipsumus neque congue biats con quatasy venenatis augue.',
         image: '/images/AlexHaysmanComment.jpg',
+        value: 4,
     },
 ]
 
