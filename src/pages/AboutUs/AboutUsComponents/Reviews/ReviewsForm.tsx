@@ -76,7 +76,7 @@ const ReviewsForm = (props: Props) => {
                             <TextareaAutosize
                                 className="textAreaTextField"
                                 minRows={5}
-                                maxLength={50}
+                                maxLength={80}
                                 maxRows={10}
                                 placeholder="Your message"
                                 value={newReview.text}
