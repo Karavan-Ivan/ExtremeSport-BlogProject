@@ -8,6 +8,7 @@ import activitiesArray, {
 } from 'utils/activitiesArray'
 import '../Activities/Activities.scss'
 import { toogleLike } from 'redux/likeReducer'
+import { Link } from 'react-router-dom'
 
 type Props = {
     activitiesObject?: {
@@ -27,7 +28,7 @@ const Favorites = ({
     const dispatch = useAppDispatch()
 
     return (
-        <div className="Activities mainContainer">
+        <div className="Activities mainContainer container">
             <h1 className="favoritesH1">Your Favorites</h1>
             <hr className="favoritesHr" />
             <Grid container spacing={6} className="Blocks">
@@ -38,7 +39,11 @@ const Favorites = ({
                                 src={activitiesObject[parseInt(id)].image}
                                 alt=""
                             />
-                            <h2>{activitiesObject[parseInt(id)].title}</h2>
+                            <h2>
+                                <Link to={`/activity/${id}`}>
+                                    {activitiesObject[parseInt(id)].title}
+                                </Link>
+                            </h2>
                             <h3>
                                 {activitiesObject[parseInt(id)].description}
                             </h3>

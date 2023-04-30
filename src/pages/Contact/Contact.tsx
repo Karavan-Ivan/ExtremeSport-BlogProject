@@ -10,7 +10,7 @@ type Props = {}
 
 const Contact = (props: Props) => {
     return (
-        <div className="mainContainer contact">
+        <div className="mainContainer contact container">
             <h1>
                 If You Have Any Questions Feel Free To Get In Touch With Our
                 Team

@@ -18,7 +18,7 @@ type Activities = {
 
 const JetSkiingPage = (props: Props) => {
     return (
-        <div className="mainContainer activitiesPages">
+        <div className="mainContainer activitiesPages container">
             <Grid container spacing={6} className="jetSkiingBloks">
                 <Grid item xs={12} sm={6} md={6} xl={6} lg={6}>
                     <Item className="jetSkiingInfo">

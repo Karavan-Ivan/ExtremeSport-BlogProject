@@ -9,8 +9,6 @@ import skateboarding from './img/skateboarding.jpg'
 import snowSports from './img/snow-sports.jpg'
 import surfing from './img/water-boarding.jpg'
 
-type Props = {}
-
 const carousel: KeenSliderPlugin = (slider) => {
     const z = 400
     function rotate() {
@@ -46,7 +44,7 @@ export default function Slider() {
                 <div className="carousel keen-slider" ref={sliderRef}>
                     <div className="carousel__cell number-slide1 ">
                         <Link to="/Activities/MountainBiking">
-                            <img src={mountainBiking} />
+                            <img src={mountainBiking} alt="" />
                         </Link>
 
                         <h1>
@@ -61,7 +59,7 @@ export default function Slider() {
                     </div>
                     <div className="carousel__cell number-slide2">
                         <Link to="/Activities/SnowSports">
-                            <img src={snowSports} />
+                            <img src={snowSports} alt="" />
                         </Link>
                         <h1>
                             <Link
@@ -75,7 +73,7 @@ export default function Slider() {
                     </div>
                     <div className="carousel__cell number-slide3">
                         <Link to="/Activities/Surfing">
-                            <img src={surfing} />
+                            <img src={surfing} alt="" />
                         </Link>
                         <h1>
                             <Link
@@ -89,7 +87,7 @@ export default function Slider() {
                     </div>
                     <div className="carousel__cell number-slide4">
                         <Link to="/Activities/Skateboarding">
-                            <img src={skateboarding} />
+                            <img src={skateboarding} alt="" />
                         </Link>
                         <h1>
                             <Link
@@ -103,7 +101,7 @@ export default function Slider() {
                     </div>
                     <div className="carousel__cell number-slide5">
                         <Link to="/Activities/JetSkiing">
-                            <img src={jetskiing} />
+                            <img src={jetskiing} alt="" />
                         </Link>
                         <h1>
                             <Link
@@ -117,7 +115,7 @@ export default function Slider() {
                     </div>
                     <div className="carousel__cell number-slide6">
                         <Link to="/Activities/IceClimbing">
-                            <img src={iceClimbing} />
+                            <img src={iceClimbing} alt="" />
                         </Link>
                         <h1>
                             <Link

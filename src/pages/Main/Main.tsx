@@ -15,14 +15,14 @@ const Main = (props: Props) => {
                 <JoinUs />
                 <Stats />
             </div>
-            <div className="middleContainer">
+            <div className="middleContainer container">
                 <ExtremeSportsActivities />
                 <JoinClubLogo />
             </div>
-            <div className="JoinClubInfoContainer mainContainer">
+            <div className="JoinClubInfoContainer mainContainer container">
                 <JoinClubInfo />
             </div>
-            <div className="mainContainer">
+            <div className="mainContainer container">
                 <WhyChooseUs />
                 <LatestNews />
             </div>

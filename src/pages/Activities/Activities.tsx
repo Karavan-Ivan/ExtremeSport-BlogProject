@@ -17,7 +17,7 @@ type Activities = {
 
 const ActivitiesPage = (props: Props) => {
     return (
-        <div className="Activities mainContainer">
+        <div className="Activities mainContainer container">
             <h1 className="allActivitiesH1">All Activities</h1>
             <hr />
             <Grid container spacing={6} className="Blocks">

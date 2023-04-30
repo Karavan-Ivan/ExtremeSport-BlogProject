@@ -6,7 +6,7 @@ type Props = {}
 
 const Footer = (props: Props) => {
     return (
-        <div className="footer">
+        <div className="footer container">
             <div className="footerInfo">
                 <img src={logo} alt="" />
                 <div className="JoinUs">

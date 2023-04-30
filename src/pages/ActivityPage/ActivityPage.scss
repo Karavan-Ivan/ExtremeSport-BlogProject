@@ -8,7 +8,7 @@
         align-items: center;
         width: 100%;
         padding: 10px 30px;
-        height: 600px;
+        height: auto;
         .activityImg {
             height: 100%;
             width: 60%;
@@ -53,6 +53,41 @@
             }
             hr {
                 margin: 15px;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .ActivityPage {
+        h1 {
+            font-size: 38px;
+            line-height: 46px;
+        }
+        .ActivityPageBlock {
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: center;
+            padding: 10px;
+            .activityInfo {
+                width: 100%;
+                h2 {
+                    font-size: 30px;
+                    line-height: 30px;
+                }
+                justify-content: flex-start;
+            }
+            .activityImg {
+                height: 250px;
+                width: 100%;
+                margin-left: 0;
+                display: flex;
+                align-items: center;
+                img {
+                    width: 100%;
+                    height: 250px;
+                    border-radius: 10px;
+                }
             }
         }
     }

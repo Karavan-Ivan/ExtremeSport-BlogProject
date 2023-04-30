@@ -19,7 +19,7 @@ type Activities = {
 
 const SurfingPage = (props: Props) => {
     return (
-        <div className="mainContainer activitiesPages">
+        <div className="mainContainer activitiesPages container">
             <h1 className="surfingH1">
                 Live A Watersports Lifestyle And Harvest The Long Term Benefits
             </h1>

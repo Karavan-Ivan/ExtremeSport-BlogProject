@@ -8,7 +8,7 @@ type Props = {}
 const AboutUs = (props: Props) => {
     return (
         <>
-            <div className="container">
+            <div className="container AboutUsContainer">
                 <RiskAndRewards />
                 <ReasonsToChoose />
                 <Instructors />

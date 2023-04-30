@@ -1,5 +1,3 @@
-import { Grid } from '@mui/material'
-import Item from '@mui/material/Grid'
 import { useParams } from 'react-router-dom'
 import activitiesArray, {
     Activities,
@@ -20,7 +18,7 @@ const ActivityPage = ({
     const activity = activityObject[parseInt(id!)]
 
     return (
-        <div className="mainContainer ActivityPage">
+        <div className="mainContainer ActivityPage container">
             <h1>{activity.title}</h1>
             <hr />
             <div className="ActivityPageBlock">
