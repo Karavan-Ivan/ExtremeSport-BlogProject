@@ -44,3 +44,18 @@
         }
     }
 }
+@media (max-width: 480px) {
+    .JoinClubInfo {
+        padding-bottom: 50px;
+        h1 {
+            font-size: 34px;
+            line-height: 44px;
+        }
+        h3 {
+            font-weight: 700;
+            text-align: center;
+            font-size: 25px;
+            line-height: 32px;
+        }
+    }
+}

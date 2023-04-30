@@ -12,6 +12,13 @@
         text-align: center;
         max-width: 860px;
     }
+    @media (max-width: 480px) {
+        h1 {
+            font-size: 36px;
+            line-height: 46px;
+            padding-bottom: 0;
+        }
+    }
     h2 {
         font-family: 'IBM Plex Sans';
         font-weight: 700;

@@ -73,6 +73,30 @@
                 }
             }
         }
+        @media (max-width: 480px) {
+            .block {
+                align-items: flex-start;
+                padding-left: 30px;
+                height: 320px;
+                h1 {
+                    text-align: left;
+                    max-width: none;
+                    font-size: 32px;
+                    line-height: 32px;
+                }
+                h2 {
+                    font-size: 26px;
+                    line-height: 32px;
+                }
+                h3 {
+                    font-size: 34px;
+                    line-height: 34px;
+                }
+                hr {
+                    margin: 15px 0;
+                }
+            }
+        }
 
         .block:hover {
             transform: scale(105%);

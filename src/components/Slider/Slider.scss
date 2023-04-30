@@ -55,6 +55,7 @@
     .scene img {
         width: 380px;
         height: 340px;
+        border-radius: 10px;
     }
 
     @media (min-width: 481px) and (max-width: 768px) {
@@ -79,6 +80,32 @@
         }
         .scene img {
             width: 340px;
+            height: 300px;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .scene {
+            width: 270px;
+            height: 300px;
+            perspective: 100px;
+            position: relative;
+        }
+        h1 {
+            margin-top: 5px;
+        }
+        .carousel__cell {
+            position: absolute;
+            width: 270px;
+            left: 0;
+            right: 0;
+            margin: auto;
+            height: 400px;
+            border: 1px solid rgba(0, 0, 0, 0.3);
+            border-top: 0;
+        }
+        .scene img {
+            width: 270px;
             height: 300px;
         }
     }

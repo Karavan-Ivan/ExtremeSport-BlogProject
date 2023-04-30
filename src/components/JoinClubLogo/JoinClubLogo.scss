@@ -41,6 +41,17 @@
             bottom: -102px;
         }
     }
+    @media (max-width: 480px) {
+        h1 {
+            font-size: 70px;
+            line-height: 70px;
+            margin-top: 130px;
+            text-align: center;
+        }
+        .OrangeVector {
+            bottom: -130px;
+        }
+    }
 
     @media (min-width: 769px) and (max-width: 1024px) {
         h1 {

@@ -5,13 +5,6 @@ import { EffectCards } from 'swiper'
 import { useAppSelector } from 'redux/hooks'
 import FavoriteTwoToneIcon from '@mui/icons-material/FavoriteTwoTone'
 
-type Review = {
-    name: string
-    text: string
-    image: string
-    value: number | null
-}
-
 export default function App() {
     const arrReviews = useAppSelector((state) => state.reviews)
 
@@ -29,6 +22,7 @@ export default function App() {
                             <img src={image} alt="" />
                             <h3>{text}</h3>
                             <h2>{name}</h2>
+                            <h3 className="h3ForMobileVersion">Read comment</h3>
                             <div className="thank">
                                 <h2>Thank you</h2>
                                 <FavoriteTwoToneIcon className="icon" />

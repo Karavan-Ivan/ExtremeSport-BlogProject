@@ -67,3 +67,16 @@
         padding: 50px;
     }
 }
+
+@media (max-width: 480px) {
+    .Instructors {
+        padding: 25px;
+        h1 {
+            font-size: 36px;
+            line-height: 42px;
+        }
+        .swiper h3 {
+            font-size: 21px;
+        }
+    }
+}

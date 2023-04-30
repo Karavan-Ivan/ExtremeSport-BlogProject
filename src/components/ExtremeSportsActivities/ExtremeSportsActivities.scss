@@ -45,3 +45,15 @@
         max-width: 400px;
     }
 }
+@media (max-width: 480px) {
+    .ExtremeSportsActivities {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding-left: 10px;
+        padding-right: 10px;
+        h3 {
+            padding-bottom: 30px;
+        }
+    }
+}

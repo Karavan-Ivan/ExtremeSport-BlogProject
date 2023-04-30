@@ -1,7 +1,6 @@
 import './Header.scss'
 import '../container.scss'
 import Logo from 'components/Logo/Logo'
-import Menu from 'components/Menu/Menu'
 import { Container } from '@mui/system'
 import { useLocation } from 'react-router-dom'
 import headerMainBackgroungImg from './img/headerMainBackgroungImg.png'
@@ -61,6 +60,7 @@ const Header = (props: Props) => {
                     backgroundImage: `url(${changeBackgroundImage()})`,
                     backgroundRepeat: 'no-repeat',
                     backgroundSize: '100% 455px',
+                    backgroundPosition: 'center',
                 }}
                 maxWidth={false}
             >

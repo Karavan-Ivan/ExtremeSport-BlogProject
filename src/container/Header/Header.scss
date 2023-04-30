@@ -4,11 +4,22 @@
     height: 455px;
     padding: 38px 45px 0 45px;
     margin-bottom: 50px;
+    position: relative;
     .logo img {
         width: 200px;
         height: 50px;
     }
+    .menuIcon {
+        color: white;
+        width: 35px;
+        height: 35px;
+    }
+
+    .buttonMenuIcon {
+        background: none;
+    }
 }
+
 @media (min-width: 769px) and (max-width: 1024px) {
     .app-bar {
         display: flex;
@@ -20,7 +31,7 @@
             width: 150px;
             height: 35px;
         }
-        .menuIcon {
+        .buttonMenuIcon {
             display: none;
         }
     }
@@ -106,13 +117,18 @@
         margin: auto;
     }
 }
-
-@media (min-width: 1025px) {
-    .menuIcon {
+@media (min-width: 769px) {
+    .menu {
+        display: block;
+    }
+    .buttonMenuIcon {
         display: none;
     }
+}
+
+@media (min-width: 1025px) {
     .menu {
-        button {
+        .mainMenuButton {
             color: #ffffff;
             font-weight: bold;
             font-size: 14px;
@@ -121,7 +137,7 @@
             margin: 0 15px;
             width: 100px;
         }
-        button:hover {
+        .mainMenuButton:hover {
             color: #ff9600;
         }
 
@@ -194,16 +210,97 @@
     }
 }
 @media (max-width: 768px) {
-    .menuIcon {
-        color: white;
-        width: 45px;
-        height: 45px;
-    }
-    .menuShow {
-        display: block;
-    }
-    .menuHide {
+    .menu {
         display: none;
+    }
+    .menu.active {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100vw;
+        position: absolute;
+        top: 96px;
+        left: 0;
+        background-color: #ffffff;
+
+        .mainMenuButton {
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 24px;
+            background: #ffffff;
+            border: none;
+            text-align: left;
+            margin: 10px 0 10px 35px;
+            width: auto;
+        }
+        .activeMenuButton {
+            color: #ff9600;
+            text-decoration: none;
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
+        .MenuButton {
+            color: black;
+            text-decoration: none;
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
+
+        .dropDownBtn {
+            position: relative;
+        }
+        .dropDownBtn:hover .dropDownContent {
+            display: block;
+        }
+        .dropDownContent li:hover {
+            color: #ff9600;
+        }
+        .dropDownContent {
+            position: absolute;
+            display: none;
+            padding: 0;
+            margin: 0;
+            left: 90px;
+            top: 0;
+            width: auto;
+            z-index: 1;
+
+            li {
+                color: black;
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 20px;
+                text-decoration: none;
+                list-style: none;
+                background: #ffffff;
+                padding: 3px 0 3px 6px;
+                border: 2px solid #ff9600;
+                width: 140px;
+                text-align: left;
+                margin: 2px;
+            }
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .app-bar {
+        .logo img {
+            width: 130px;
+            height: 40px;
+        }
+        .menuIcon {
+            color: white;
+            width: 30px;
+            height: 30px;
+        }
+        .menuIconActive {
+            color: #ff9600;
+            width: 30px;
+            height: 30px;
+        }
     }
 }
 
@@ -217,5 +314,12 @@
     .whiteVector {
         top: 214px;
         height: 260px;
+    }
+}
+
+@media (max-width: 480px) {
+    .app-bar {
+        padding: 25px 15px 0 15px;
+        height: 350px;
     }
 }

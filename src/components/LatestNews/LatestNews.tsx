@@ -6,7 +6,7 @@ type Props = {}
 
 const LatestNews = (props: Props) => {
     return (
-        <Grid container spacing={2} className="latestNews">
+        <Grid container spacing={0} className="latestNews">
             <Grid item xs={12} sm={12} md={3}>
                 <LatestNewsArticle />
             </Grid>

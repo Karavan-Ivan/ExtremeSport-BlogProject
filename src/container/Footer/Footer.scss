@@ -67,7 +67,7 @@
     }
 }
 
-@media (min-width: 481px) and (max-width: 768px) {
+@media (max-width: 768px) {
     .footer {
         justify-content: flex-start;
         background: url(./img/footerImg.png), #0c3543;
@@ -80,8 +80,8 @@
             padding: 20px;
             gap: 25px;
             img {
-                width: 200px;
-                height: 60px;
+                width: 150px;
+                height: 40px;
             }
             hr {
                 margin: 0;
@@ -116,5 +116,15 @@
                 }
             }
         }
+    }
+}
+@media (max-width: 480px) {
+    .footer {
+        justify-content: flex-start;
+        background: url(./img/footerImg.png), #0c3543;
+        background-position: top, bottom;
+        background-repeat: no-repeat, no-repeat;
+        background-size: 100% 25%, 75%;
+        padding: 240px 0 0;
     }
 }

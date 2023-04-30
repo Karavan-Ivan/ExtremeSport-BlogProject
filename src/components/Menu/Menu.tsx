@@ -1,27 +1,27 @@
 import { NavLink } from 'react-router-dom'
 import { setActive } from 'container/App/App'
 import MenuIcon from '@mui/icons-material/Menu'
+import CloseIcon from '@mui/icons-material/Close'
+import { useState } from 'react'
 
 type Props = {}
 
 const MenuMain = (props: Props) => {
+    const [menuActive, setMenuActive] = useState(false)
     return (
         <>
-            <button>
-                <MenuIcon className="menuIcon" />
-            </button>
-            <div className="menu">
-                <button>
+            <div className={menuActive ? 'menu active' : 'menu'}>
+                <button className="mainMenuButton">
                     <NavLink to="/" className={setActive}>
                         Home
                     </NavLink>
                 </button>
-                <button>
+                <button className="mainMenuButton">
                     <NavLink to="/AboutUs" className={setActive}>
                         About us
                     </NavLink>
                 </button>
-                <button className="dropDownBtn">
+                <button className="dropDownBtn mainMenuButton">
                     <NavLink to="/Activities" className={setActive}>
                         Activities
                         <div className="dropDownContent">
@@ -76,18 +76,27 @@ const MenuMain = (props: Props) => {
                         </div>
                     </NavLink>
                 </button>
-
-                <button>
+                <button className="mainMenuButton">
                     <NavLink to="/Favorites" className={setActive}>
                         Favorites
                     </NavLink>
                 </button>
-                <button>
+                <button className="mainMenuButton">
                     <NavLink to="/Contact" className={setActive}>
                         Contact
                     </NavLink>
                 </button>
             </div>
+            <button
+                onClick={() => setMenuActive(!menuActive)}
+                className="buttonMenuIcon"
+            >
+                {menuActive ? (
+                    <CloseIcon className="menuIcon" />
+                ) : (
+                    <MenuIcon className="menuIcon" />
+                )}
+            </button>
         </>
     )
 }

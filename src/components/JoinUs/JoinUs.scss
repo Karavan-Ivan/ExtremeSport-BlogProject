@@ -30,6 +30,14 @@
                 max-width: 380px;
             }
         }
+        @media (max-width: 480px) {
+            .JoinUsImgFirst {
+                height: 350px;
+            }
+            .JoinUsImgSecond {
+                height: 300px;
+            }
+        }
     }
 
     .info {
@@ -43,6 +51,8 @@
     h1 {
         color: #222222;
         margin: 10px 0;
+        font-size: 48px;
+        line-height: 50px;
     }
 
     h3 {
