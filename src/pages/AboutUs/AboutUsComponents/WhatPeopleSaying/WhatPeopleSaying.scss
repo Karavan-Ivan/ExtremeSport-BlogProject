@@ -232,18 +232,19 @@
                 height: 280px;
             }
             .SlideInfo {
+                padding: 0 5px;
                 .thank {
                     display: none;
                 }
                 h2 {
-                    padding: 20px 0 15px;
-                }
-                .h3ForMobileVersion {
-                    display: block;
-                    padding: 0;
+                    padding: 10px 0;
+                    font-size: 20px;
+                    line-height: 24px;
                 }
                 h3 {
-                    display: none;
+                    font-size: 16px;
+                    line-height: 20px;
+                    padding-bottom: 0;
                 }
             }
         }
