@@ -22,7 +22,6 @@ export default function App() {
                             <img src={image} alt="" />
                             <h3>{text}</h3>
                             <h2>{name}</h2>
-
                             <h3 className="h3ForMobileVersion">Read comment</h3>
                             <div className="thank">
                                 <h2>Thank you</h2>

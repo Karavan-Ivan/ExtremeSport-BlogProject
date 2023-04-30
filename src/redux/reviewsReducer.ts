@@ -4,7 +4,7 @@ type Review = {
     name: string
     text: string
     image: string
-    value: number | null
+    value: number | undefined
 }
 
 const initialState: Review[] = [

@@ -9,7 +9,7 @@ type Review = {
     name: string
     text: string
     image: string
-    value: number | null
+    value: number | undefined
 }
 
 const ReviewsForm = (props: Props) => {
@@ -36,7 +36,7 @@ const ReviewsForm = (props: Props) => {
         }))
     }
 
-    const handleRating = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
+    const handleRating = (e: React.ChangeEvent<HTMLInputElement>) => {
         setNewReview((prevState) => ({
             ...prevState,
             value: parseInt(e.target.value),
@@ -72,7 +72,6 @@ const ReviewsForm = (props: Props) => {
                                 required
                             />
                         </div>
-
                         <div className="textAreaText">
                             <TextareaAutosize
                                 className="textAreaTextField"
@@ -86,7 +85,6 @@ const ReviewsForm = (props: Props) => {
                             />
                         </div>
                     </div>
-
                     <button type="submit">Send</button>
                 </div>
             </form>
@@ -95,19 +93,3 @@ const ReviewsForm = (props: Props) => {
 }
 
 export default ReviewsForm
-
-{
-    /* <Box
-                        sx={{
-                            '& > legend': { mt: 2 },
-                        }}
-                    >
-                        <Typography component="legend">
-                            <Rating
-                                name="simple-controlled"
-                                value={newReview.value}
-                                onChange={handleRating}
-                            />
-                        </Typography>
-                    </Box> */
-}
