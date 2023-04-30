@@ -1,6 +1,6 @@
 import { TextField, TextareaAutosize } from '@mui/material'
 import { useState } from 'react'
-import { useAppDispatch, useAppSelector } from 'redux/hooks'
+import { useAppDispatch } from 'redux/hooks'
 import { addReview } from 'redux/reviewsReducer'
 
 type Props = {}
@@ -13,7 +13,7 @@ type Review = {
 }
 
 const ReviewsForm = (props: Props) => {
-    const arrReviews = useAppSelector((state) => state.reviews)
+    // const arrReviews = useAppSelector((state) => state.reviews)
     const dispatch = useAppDispatch()
 
     const [newReview, setNewReview] = useState<Review>({
@@ -36,12 +36,12 @@ const ReviewsForm = (props: Props) => {
         }))
     }
 
-    const handleRating = (e: React.ChangeEvent<HTMLInputElement>) => {
-        setNewReview((prevState) => ({
-            ...prevState,
-            value: parseInt(e.target.value),
-        }))
-    }
+    // const handleRating = (e: React.ChangeEvent<HTMLInputElement>) => {
+    //     setNewReview((prevState) => ({
+    //         ...prevState,
+    //         value: parseInt(e.target.value),
+    //     }))
+    // }
 
     const sendReview = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault()
