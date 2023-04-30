@@ -24,57 +24,57 @@ const MenuMain = (props: Props) => {
                 <button className="dropDownBtn mainMenuButton">
                     <NavLink to="/Activities" className={setActive}>
                         Activities
-                        <div className="dropDownContent">
-                            <li>
-                                <NavLink
-                                    to="/Activities/MountainBiking"
-                                    className={setActive}
-                                >
-                                    Mountain Biking
-                                </NavLink>
-                            </li>
-                            <li>
-                                <NavLink
-                                    to="/Activities/SnowSports"
-                                    className={setActive}
-                                >
-                                    Snow Sports
-                                </NavLink>
-                            </li>
-                            <li>
-                                <NavLink
-                                    to="/Activities/Surfing"
-                                    className={setActive}
-                                >
-                                    Surfing
-                                </NavLink>
-                            </li>
-                            <li>
-                                <NavLink
-                                    to="/Activities/Skateboarding"
-                                    className={setActive}
-                                >
-                                    Skateboarding
-                                </NavLink>
-                            </li>
-                            <li>
-                                <NavLink
-                                    to="/Activities/JetSkiing"
-                                    className={setActive}
-                                >
-                                    Jet Skiing
-                                </NavLink>
-                            </li>
-                            <li>
-                                <NavLink
-                                    to="/Activities/IceClimbing"
-                                    className={setActive}
-                                >
-                                    Ice Climbing
-                                </NavLink>
-                            </li>
-                        </div>
                     </NavLink>
+                    <div className="dropDownContent">
+                        <li>
+                            <NavLink
+                                to="/Activities/MountainBiking"
+                                className={setActive}
+                            >
+                                Mountain Biking
+                            </NavLink>
+                        </li>
+                        <li>
+                            <NavLink
+                                to="/Activities/SnowSports"
+                                className={setActive}
+                            >
+                                Snow Sports
+                            </NavLink>
+                        </li>
+                        <li>
+                            <NavLink
+                                to="/Activities/Surfing"
+                                className={setActive}
+                            >
+                                Surfing
+                            </NavLink>
+                        </li>
+                        <li>
+                            <NavLink
+                                to="/Activities/Skateboarding"
+                                className={setActive}
+                            >
+                                Skateboarding
+                            </NavLink>
+                        </li>
+                        <li>
+                            <NavLink
+                                to="/Activities/JetSkiing"
+                                className={setActive}
+                            >
+                                Jet Skiing
+                            </NavLink>
+                        </li>
+                        <li>
+                            <NavLink
+                                to="/Activities/IceClimbing"
+                                className={setActive}
+                            >
+                                Ice Climbing
+                            </NavLink>
+                        </li>
+                    </div>
                 </button>
                 <button className="mainMenuButton">
                     <NavLink to="/Favorites" className={setActive}>
