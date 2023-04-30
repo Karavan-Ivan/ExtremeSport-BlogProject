@@ -379,4 +379,21 @@
             }
         }
     }
+
+    @media (min-width: 600px) and (max-width: 768px) {
+        .iceClimbingBloks {
+            display: flex;
+            align-items: center;
+            .pageImg {
+                height: 440px;
+            }
+            .iceClimbingPageImg1 {
+                margin-bottom: 0;
+                background-size: 100% 440px;
+            }
+            .iceClimbingPageImg2 {
+                background-size: 100% 440px;
+            }
+        }
+    }
 }

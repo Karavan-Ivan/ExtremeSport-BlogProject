@@ -59,6 +59,23 @@
             }
         }
 
+        @media (min-width: 800px) and (max-width: 899px) {
+            .block {
+                h1 {
+                    font-size: 40px;
+                    line-height: 40px;
+                }
+                h2 {
+                    font-size: 28px;
+                    line-height: 30px;
+                }
+                h3 {
+                    font-size: 42px;
+                    line-height: 42px;
+                }
+            }
+        }
+
         @media (min-width: 481px) and (max-width: 768px) {
             .block {
                 align-items: flex-start;

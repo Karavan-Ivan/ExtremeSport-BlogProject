@@ -86,6 +86,7 @@ const ReviewsForm = (props: Props) => {
                             />
                         </div>
                     </div>
+
                     <button type="submit">Send</button>
                 </div>
             </form>
@@ -97,16 +98,16 @@ export default ReviewsForm
 
 {
     /* <Box
-                            sx={{
-                                '& > legend': { mt: 2 },
-                            }}
-                        >
-                            <Typography component="legend">
-                                <Rating
-                                    name="simple-controlled"
-                                    value={newReview.value}
-                                    onChange={handleRating}
-                                />
-                            </Typography>
-                        </Box> */
+                        sx={{
+                            '& > legend': { mt: 2 },
+                        }}
+                    >
+                        <Typography component="legend">
+                            <Rating
+                                name="simple-controlled"
+                                value={newReview.value}
+                                onChange={handleRating}
+                            />
+                        </Typography>
+                    </Box> */
 }

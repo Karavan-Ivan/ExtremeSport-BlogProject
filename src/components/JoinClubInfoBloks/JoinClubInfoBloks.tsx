@@ -11,7 +11,7 @@ const JoinClubInfoBloks = (props: Props) => {
             <Grid
                 item
                 xs={12}
-                sm={4}
+                sm={12}
                 md={4}
                 lg={4}
                 xl={4}
@@ -27,7 +27,7 @@ const JoinClubInfoBloks = (props: Props) => {
             <Grid
                 item
                 xs={12}
-                sm={4}
+                sm={12}
                 md={4}
                 lg={4}
                 xl={4}
@@ -45,7 +45,7 @@ const JoinClubInfoBloks = (props: Props) => {
             <Grid
                 item
                 xs={12}
-                sm={4}
+                sm={12}
                 md={4}
                 lg={4}
                 xl={4}

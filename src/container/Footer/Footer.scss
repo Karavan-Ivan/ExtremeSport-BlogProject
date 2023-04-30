@@ -69,12 +69,6 @@
 
 @media (max-width: 768px) {
     .footer {
-        justify-content: flex-start;
-        background: url(./img/footerImg.png), #0c3543;
-        background-position: top, bottom;
-        background-repeat: no-repeat, no-repeat;
-        background-size: 100% 35%, 65%;
-        padding: 380px 0 0;
         .footerInfo {
             width: 100%;
             padding: 20px;
@@ -125,6 +119,17 @@
         background-position: top, bottom;
         background-repeat: no-repeat, no-repeat;
         background-size: 100% 25%, 75%;
+        padding: 240px 0 0;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    .footer {
+        justify-content: flex-start;
+        background: url(./img/footerImg.png), #0c3543;
+        background-position: top, bottom;
+        background-repeat: no-repeat, no-repeat;
+        background-size: 100% 30%, 70%;
         padding: 240px 0 0;
     }
 }
