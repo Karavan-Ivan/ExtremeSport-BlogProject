@@ -31,29 +31,17 @@ const App = (props: Props) => {
             <Header />
             <Routes>
                 <Route path="/" element={<Main />} />
-                <Route path="/AboutUs" element={<AboutUs />} />
+                <Route path="/About-Us" element={<AboutUs />} />
                 <Route path="/Activities" element={<Activities />} />
                 <Route
-                    path="/Activities/MountainBiking"
+                    path="/Mountain-Biking"
                     element={<MountainBikingPage />}
                 />
-                <Route
-                    path="/Activities/SnowSports"
-                    element={<SnowSportsPage />}
-                />
-                <Route path="/Activities/Surfing" element={<SurfingPage />} />
-                <Route
-                    path="/Activities/Skateboarding"
-                    element={<SkateboardingPage />}
-                />
-                <Route
-                    path="/Activities/JetSkiing"
-                    element={<JetSkiingPage />}
-                />
-                <Route
-                    path="/Activities/IceClimbing"
-                    element={<IceClimbingPage />}
-                />
+                <Route path="/Snow-Sports" element={<SnowSportsPage />} />
+                <Route path="/Surfing" element={<SurfingPage />} />
+                <Route path="/Skateboarding" element={<SkateboardingPage />} />
+                <Route path="/Jet-Skiing" element={<JetSkiingPage />} />
+                <Route path="/Ice-Climbing" element={<IceClimbingPage />} />
                 <Route path="/Favorites" element={<Favorites />} />
                 <Route path="/Contact" element={<Contact />} />
                 <Route path="activity/:id" element={<ActivityPage />} />

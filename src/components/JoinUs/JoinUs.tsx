@@ -51,7 +51,7 @@ const JoinUs = (props: Props) => {
                         </li>
                     </ul>
                     <button className="button">
-                        <Link to="/AboutUs" className="activeNavButton">
+                        <Link to="/About-Us" className="activeNavButton">
                             Discover More
                         </Link>
                     </button>

@@ -17,7 +17,7 @@ const MenuMain = (props: Props) => {
                     </NavLink>
                 </button>
                 <button className="mainMenuButton">
-                    <NavLink to="/AboutUs" className={setActive}>
+                    <NavLink to="/About-Us" className={setActive}>
                         About us
                     </NavLink>
                 </button>
@@ -28,49 +28,34 @@ const MenuMain = (props: Props) => {
                     <div className="dropDownContent">
                         <li>
                             <NavLink
-                                to="/Activities/MountainBiking"
+                                to="/Mountain-Biking"
                                 className={setActive}
                             >
                                 Mountain Biking
                             </NavLink>
                         </li>
                         <li>
-                            <NavLink
-                                to="/Activities/SnowSports"
-                                className={setActive}
-                            >
+                            <NavLink to="/Snow-Sports" className={setActive}>
                                 Snow Sports
                             </NavLink>
                         </li>
                         <li>
-                            <NavLink
-                                to="/Activities/Surfing"
-                                className={setActive}
-                            >
+                            <NavLink to="/Surfing" className={setActive}>
                                 Surfing
                             </NavLink>
                         </li>
                         <li>
-                            <NavLink
-                                to="/Activities/Skateboarding"
-                                className={setActive}
-                            >
+                            <NavLink to="/Skateboarding" className={setActive}>
                                 Skateboarding
                             </NavLink>
                         </li>
                         <li>
-                            <NavLink
-                                to="/Activities/JetSkiing"
-                                className={setActive}
-                            >
+                            <NavLink to="/Jet-Skiing" className={setActive}>
                                 Jet Skiing
                             </NavLink>
                         </li>
                         <li>
-                            <NavLink
-                                to="/Activities/IceClimbing"
-                                className={setActive}
-                            >
+                            <NavLink to="/Ice-Climbing" className={setActive}>
                                 Ice Climbing
                             </NavLink>
                         </li>

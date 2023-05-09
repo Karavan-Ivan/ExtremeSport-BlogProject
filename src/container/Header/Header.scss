@@ -1,10 +1,31 @@
 .app-bar {
     display: flex;
-    align-items: flex-start;
-    height: 455px;
+    align-items: center;
+    flex-direction: column;
+    height: 600px;
     padding: 38px 45px 0 45px;
     margin-bottom: 50px;
     position: relative;
+    background-image: url(../../../public/images/HeaderBackground.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 700px;
+    .logoMenu {
+        display: flex;
+        align-items: flex-start;
+        width: 100%;
+    }
+    .headerArtice {
+        text-align: center;
+        font-family: 'IBM Plex Sans';
+        color: #ffffff;
+        font-weight: 700;
+        font-size: 72px;
+        line-height: 86px;
+        padding-top: 100px;
+        max-width: 800px;
+        align-self: center;
+    }
     .logo img {
         width: 200px;
         height: 50px;
@@ -24,9 +45,16 @@
     .app-bar {
         display: flex;
         align-items: flex-start;
-        height: 350px;
+        height: 450px;
         padding: 38px 45px 0 45px;
         margin-bottom: 50px;
+        background-size: 100% 450px;
+        .headerArtice {
+            font-size: 62px;
+            line-height: 76px;
+            padding-top: 80px;
+            max-width: 700px;
+        }
         .logo img {
             width: 150px;
             height: 35px;
@@ -111,7 +139,7 @@
         max-width: 1540px;
         background-size: 100%;
         position: absolute;
-        top: 220px;
+        top: 315px;
         right: 0;
         left: 0;
         margin: auto;
@@ -203,90 +231,121 @@
         max-width: 1540px;
         background-size: 100%;
         position: absolute;
-        top: 280px;
+        top: 420px;
         right: 0;
         left: 0;
         margin: auto;
     }
 }
 @media (max-width: 768px) {
-    .menu {
-        display: none;
-    }
-    .menu.active {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        width: 100vw;
-        position: absolute;
-        top: 96px;
-        left: 0;
-        background-color: #ffffff;
-
-        .mainMenuButton {
-            font-weight: 700;
-            font-size: 18px;
-            line-height: 24px;
-            background: #ffffff;
-            border: none;
-            text-align: left;
-            margin: 10px 0 10px 35px;
-            width: auto;
+    .app-bar {
+        height: 450px;
+        background-size: 100% 450px;
+        .headerArtice {
+            font-size: 52px;
+            line-height: 66px;
+            padding-top: 80px;
         }
-        .activeMenuButton {
-            color: #ff9600;
-            text-decoration: none;
-            width: 100%;
-            height: 100%;
-            display: block;
-        }
-        .MenuButton {
-            color: black;
-            text-decoration: none;
-            width: 100%;
-            height: 100%;
-            display: block;
-        }
-
-        .dropDownBtn {
-            position: relative;
-        }
-        .dropDownBtn:hover .dropDownContent {
-            display: block;
-        }
-        .dropDownContent li:hover {
-            color: #ff9600;
-        }
-        .dropDownContent {
-            position: absolute;
+        .menu {
             display: none;
-            padding: 0;
-            margin: 0;
-            left: 90px;
-            top: 0;
-            width: auto;
-            z-index: 1;
+        }
+        .menu.active {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            width: 100vw;
+            position: absolute;
+            top: 96px;
+            left: 0;
+            background-color: #ffffff;
 
-            li {
-                color: black;
+            .mainMenuButton {
                 font-weight: 700;
-                font-size: 16px;
-                line-height: 20px;
-                text-decoration: none;
-                list-style: none;
+                font-size: 18px;
+                line-height: 24px;
                 background: #ffffff;
-                padding: 3px 0 3px 6px;
-                border: 2px solid #ff9600;
-                width: 140px;
+                border: none;
                 text-align: left;
-                margin: 2px;
+                margin: 10px 0 10px 35px;
+                width: auto;
             }
+            .activeMenuButton {
+                color: #ff9600;
+                text-decoration: none;
+                width: 100%;
+                height: 100%;
+                display: block;
+            }
+            .MenuButton {
+                color: black;
+                text-decoration: none;
+                width: 100%;
+                height: 100%;
+                display: block;
+            }
+
+            .dropDownBtn {
+                position: relative;
+            }
+            .dropDownBtn:hover .dropDownContent {
+                display: block;
+            }
+            .dropDownContent li:hover {
+                color: #ff9600;
+            }
+            .dropDownContent {
+                position: absolute;
+                display: none;
+                padding: 0;
+                margin: 0;
+                left: 90px;
+                top: 0;
+                width: auto;
+                z-index: 1;
+
+                li {
+                    color: black;
+                    font-weight: 700;
+                    font-size: 16px;
+                    line-height: 20px;
+                    text-decoration: none;
+                    list-style: none;
+                    background: #ffffff;
+                    padding: 3px 0 3px 6px;
+                    border: 2px solid #ff9600;
+                    width: 140px;
+                    text-align: left;
+                    margin: 2px;
+                }
+            }
+        }
+        .whiteVector {
+            background-image: url(./img/whiteVector.svg);
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 150px;
+            max-width: 1540px;
+            background-size: 100%;
+            position: absolute;
+            top: 330px;
+            right: 0;
+            left: 0;
+            margin: auto;
         }
     }
 }
 
 @media (max-width: 480px) {
     .app-bar {
+        padding: 25px 15px 0 15px;
+        height: 350px;
+        background-size: 100% 350px;
+        background-image: url(../../../public/images/HeaderBackgroundMobile.png);
+        .headerArtice {
+            font-size: 34px;
+            line-height: 40px;
+            padding-top: 60px;
+        }
         .logo img {
             width: 130px;
             height: 40px;
@@ -301,25 +360,68 @@
             width: 30px;
             height: 30px;
         }
+        .whiteVector {
+            width: 100%;
+            height: 150px;
+            top: 295px;
+        }
     }
 }
 
 @media (min-width: 1201px) {
     .whiteVector {
-        top: 246px;
+        top: 394px;
     }
 }
 
 @media (min-width: 1400px) {
     .whiteVector {
-        top: 214px;
+        top: 350px;
         height: 260px;
     }
 }
 
-@media (max-width: 480px) {
+@media (min-width: 375px) and (max-width: 400px) {
     .app-bar {
-        padding: 25px 15px 0 15px;
-        height: 350px;
+        .whiteVector {
+            top: 285px;
+            height: 210px;
+        }
+    }
+}
+
+@media (min-width: 401px) and (max-width: 480px) {
+    .app-bar {
+        .whiteVector {
+            top: 275px;
+            height: 210px;
+        }
+    }
+}
+
+@media (min-width: 481px) and (max-width: 600px) {
+    .app-bar {
+        .whiteVector {
+            top: 365px;
+            height: 210px;
+        }
+    }
+}
+
+@media (min-width: 601px) and (max-width: 700px) {
+    .app-bar {
+        .whiteVector {
+            top: 345px;
+            height: 210px;
+        }
+    }
+}
+
+@media (min-width: 950px) and (max-width: 1024px) {
+    .app-bar {
+        .whiteVector {
+            top: 285px;
+            height: 210px;
+        }
     }
 }

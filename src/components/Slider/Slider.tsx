@@ -43,13 +43,13 @@ export default function Slider() {
             <div className="scene">
                 <div className="carousel keen-slider" ref={sliderRef}>
                     <div className="carousel__cell number-slide1 ">
-                        <Link to="/Activities/MountainBiking">
+                        <Link to="/Mountain-Biking">
                             <img src={mountainBiking} alt="" />
                         </Link>
 
                         <h1>
                             <Link
-                                to="/Activities/MountainBiking"
+                                to="/Mountain-Biking"
                                 className="activeNavLink"
                             >
                                 Mountain Biking
@@ -58,70 +58,55 @@ export default function Slider() {
                         <h3>Dolor sit amet magna</h3>
                     </div>
                     <div className="carousel__cell number-slide2">
-                        <Link to="/Activities/SnowSports">
+                        <Link to="Snow-Sports">
                             <img src={snowSports} alt="" />
                         </Link>
                         <h1>
-                            <Link
-                                to="/Activities/SnowSports"
-                                className="activeNavLink"
-                            >
+                            <Link to="Snow-Sports" className="activeNavLink">
                                 Snow Sports
                             </Link>
                         </h1>
                         <h3>Dolor sit amet magna</h3>
                     </div>
                     <div className="carousel__cell number-slide3">
-                        <Link to="/Activities/Surfing">
+                        <Link to="/Surfing">
                             <img src={surfing} alt="" />
                         </Link>
                         <h1>
-                            <Link
-                                to="/Activities/Surfing"
-                                className="activeNavLink"
-                            >
+                            <Link to="/Surfing" className="activeNavLink">
                                 Surfing
                             </Link>
                         </h1>
                         <h3>Dolor sit amet magna</h3>
                     </div>
                     <div className="carousel__cell number-slide4">
-                        <Link to="/Activities/Skateboarding">
+                        <Link to="/Skateboarding">
                             <img src={skateboarding} alt="" />
                         </Link>
                         <h1>
-                            <Link
-                                to="/Activities/Skateboarding"
-                                className="activeNavLink"
-                            >
+                            <Link to="/Skateboarding" className="activeNavLink">
                                 Skateboarding
                             </Link>
                         </h1>
                         <h3>Dolor sit amet magna</h3>
                     </div>
                     <div className="carousel__cell number-slide5">
-                        <Link to="/Activities/JetSkiing">
+                        <Link to="/Jet-Skiing">
                             <img src={jetskiing} alt="" />
                         </Link>
                         <h1>
-                            <Link
-                                to="/Activities/JetSkiing"
-                                className="activeNavLink"
-                            >
+                            <Link to="/Jet-Skiing" className="activeNavLink">
                                 Jet Skiing
                             </Link>
                         </h1>
                         <h3>Dolor sit amet magna</h3>
                     </div>
                     <div className="carousel__cell number-slide6">
-                        <Link to="/Activities/IceClimbing">
+                        <Link to="/Ice-Climbing">
                             <img src={iceClimbing} alt="" />
                         </Link>
                         <h1>
-                            <Link
-                                to="/Activities/IceClimbing"
-                                className="activeNavLink"
-                            >
+                            <Link to="/Ice-Climbing" className="activeNavLink">
                                 Ice Climbing
                             </Link>
                         </h1>

@@ -3,69 +3,42 @@ import '../container.scss'
 import Logo from 'components/Logo/Logo'
 import { Container } from '@mui/system'
 import { useLocation } from 'react-router-dom'
-import headerMainBackgroungImg from './img/headerMainBackgroungImg.png'
-import headerAboutUsBackgroungImg from './img/headerAboutUsBackgroungImg.png'
-import headerActivitiesBackgroungImg from './img/headerActivitiesBackgroungImg.png'
-import headerContactBackgroungImg from './img/headerContactBackgroungImg.png'
-import headerIceClimbingBackgroungImg from './img/headerIceClimbingBackgroungImg.png'
-import headerJetSkiingBackgroungImg from './img/headerJetSkiingBackgroungImg.png'
-import headerMountainBikingBackgroungImg from './img/headerMountainBikingBackgroungImg.png'
-import headerSkateboardingBackgroungImg from './img/headerSkateboardingBackgroungImg.png'
-import headerSnowSportBackgroungImg from './img/headerSnowSportBackgroungImg.png'
-import headerSurfingBackgroungImg from './img/headerSurfingBackgroungImg.png'
 import MenuMain from 'components/Menu/Menu'
+import activitiesArray, {
+    Activities,
+    getActivityObject,
+} from 'utils/activitiesArray'
 
-type Props = {}
+type Props = {
+    activityObject?: {
+        [id: number]: Activities
+    }
+}
 
-const Header = (props: Props) => {
+const Header = ({
+    activityObject = getActivityObject(activitiesArray),
+}: Props) => {
     const location = useLocation()
 
-    const changeBackgroundImage = () => {
-        if (location.pathname === '/AboutUs') {
-            return headerAboutUsBackgroungImg
-        }
-        if (location.pathname === '/Activities') {
-            return headerActivitiesBackgroungImg
-        }
-        if (location.pathname === '/Contact') {
-            return headerContactBackgroungImg
-        }
-        if (location.pathname === '/IceClimbing') {
-            return headerIceClimbingBackgroungImg
-        }
-        if (location.pathname === '/MountainBiking') {
-            return headerMountainBikingBackgroungImg
-        }
-        if (location.pathname === '/SnowSports') {
-            return headerSnowSportBackgroungImg
-        }
-        if (location.pathname === '/Skateboarding') {
-            return headerSkateboardingBackgroungImg
-        }
-        if (location.pathname === '/Surfing') {
-            return headerSurfingBackgroungImg
-        }
-        if (location.pathname === '/JetSkiing') {
-            return headerJetSkiingBackgroungImg
+    const headerArticeChange = () => {
+        if (
+            location.pathname === '/' ||
+            +location.pathname.substring(location.pathname.length - 1) % 1 === 0
+        ) {
+            return 'Experience The Spirit Of Adventure Sports'
         } else {
-            return headerMainBackgroungImg
+            return location.pathname.replace('/', '').replace('-', ' ')
         }
     }
 
     return (
         <>
-            <Container
-                className="app-bar container"
-                sx={{
-                    backgroundImage: `url(${changeBackgroundImage()})`,
-                    backgroundRepeat: 'no-repeat',
-                    backgroundSize: '100% 455px',
-                    backgroundPosition: 'center',
-                }}
-                maxWidth={false}
-            >
-                <Logo />
-                <MenuMain />
+            <Container className="app-bar container" maxWidth={false}>
+                <div className="logoMenu">
+                    <Logo />
+                    <MenuMain />
+                </div>
+                <h1 className="headerArtice">{headerArticeChange()}</h1>
                 <div className="whiteVector"></div>
             </Container>
         </>
